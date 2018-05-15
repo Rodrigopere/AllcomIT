@@ -13,6 +13,7 @@ var robo=[
 
 //pega primeira pergunta e exibe na tela
 function pushQuestion(){
+            alert("caio");
             $("#answer_robo").empty();
             firstElement = robo.shift();   
             if (firstElement!=undefined){
