@@ -36,7 +36,7 @@ input[type="button"], input[type="submit"] {
 }
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
-	padding: 4.6em 0em 0em 0em;
+	/* padding: 4.6em 0em 0em 0em; */
 	font-family: 'Raleway', sans-serif;
 	font-weight:600;
 }
@@ -46,7 +46,8 @@ p {
 }
 ul {
 	margin: 0;
-	padding: 0;
+    padding: 0;
+    
 }
 li {
 	list-style-type:none;
@@ -63,7 +64,7 @@ a:focus, a:hover {
 .w3lshome {
     /* background: url(images/banner3.jpg); */
     background: url('../images/banner1.jpg')no-repeat;
-    min-height: 700px;
+    min-height: 1080px;
     background-size: cover;
 	text-align: center;
 }
@@ -130,23 +131,73 @@ a.navbar-brand.w3-logo:hover {
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
-    padding: 0% 0px 14em;
+    padding: 0% 0px 16em;
 }
 .about-txt, .about-img {
     flex: 1;
 	-webkit-box-flex: 1;
 	-moz-box-flex: 1;
 	-webkit-flex: 1;
-	-ms-flex: 1;
+    -ms-flex: 1;
+    margin-left: -16px;
 }
 .about-txt p {
     padding-right: 10px;
-	line-height: 2.7em;
+	line-height: 2em;
 }
 div#about {
     background-color: #fff;
 }
 
+.divisoria{
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 76px;
+    border-left: 2px solid #DADCDE;
+
+}
+.comofunciona{
+    margin-top: 194px;
+    margin-bottom: 52px;
+    /* border: 2px solid blue; */
+    position: relative;
+    width: 100%;
+}
+.opcao{
+    /* border: 2px solid red; */
+    position: relative;
+    display: inline-block;
+    /* min-width: 30px; */
+    /* min-height: 30px; */
+}
+
+
+.logo-negocie-digital {	
+    height: 42px;
+    width: 231px;
+}
+
+.line {	
+    box-sizing: border-box;	
+    width: 125%;	
+    border: 1px solid #EAECED;}
+
+.number{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    background-color:#DADCDE;
+    color:#383A40;
+    margin-left: 38px;
+    margin-right: 28px;
+}
 .agile-list span.fa.fa-arrow-right {
     color: blue;
 }
@@ -154,6 +205,8 @@ div#about {
     padding: 10px 0px;
 }
 .about-img img.img-responsive {
+    right: 0px;
+    position: absolute;
     /* border-radius: 5px; 
     -webkit-box-shadow: 0px 0px 14px 0px rgba(249, 4, 4, 0.62);
     -moz-box-shadow: 0px 3px 58px 1px rgb(251, 11, 11);
@@ -167,10 +220,17 @@ div#about {
 	/*background: url('../images/icon01.png') no-repeat;*/
 }
 .about-txt h2 {
-    font-size: 3em;
     font-family: Avenir LT Std;
-    font-weight: bold;
+    /* font-weight: bold; */
     color: #0296F8;
+    font-weight: 800;
+    letter-spacing: -1.36px;
+    line-height: 44px;
+    height: 88px;
+    width: 149px;
+    color: #2290D8;
+    /* font-family: Avenir; */
+    font-size: 40px;
 }
 /* //about */
 /*-- team-inner-page --*/
@@ -1217,8 +1277,20 @@ margin-top: 110px;
     padding: 10px;
 }
 .about-txt p {
-    padding-right: 0;
+    padding: 0px 0px 0px 0px;
+    margin-top: 22px;
+    margin-left: 10%;
+    width: 100%;
 }
+
+.comofunciona {
+    margin-top: 0px;
+    margin-bottom: 100px;
+    /* border: 2px solid blue; */
+    position: relative;
+    width: 100%;
+}
+
 }
 @media screen and (max-width: 667px){
 	.w3-banner-heading h1 {
@@ -1280,7 +1352,18 @@ margin-top: 110px;
 }
 .gallery h3.center, .about-txt h2, .team h3.center, .agile-stats h3.center, .w3-services h3.center, .wthree-blog h3.center {
     font-size: 4em;
+    margin-left: 20%;
+    line-height: 1em;
 }
+
+.divisoria {
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-left: 24%;
+    height: 76px;
+    border-left: 2px solid #DADCDE;
+
 .blog-txt p {
     line-height: 2em;
 }
@@ -1398,10 +1481,10 @@ ul.contact-list ,ul.social-links{
 }
 .w3-banner-heading h1 {
     font-size: 3.4em;
-    padding: 57% 0 5px;
+    padding: 32% 0 5px;
 }
 .w3-banner-heading p {
-    font-size: 1em;
+    font-size: 3em;
 }
 .view .content {
     left: 0%;
