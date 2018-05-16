@@ -54,7 +54,9 @@
        
         var neto2 = document.createElement("div");
         $(neto2).addClass('boxQuestion');
-        neto2.innerHTML=firstElement.question;
+        escrever(firstElement.question, neto2);
+
+
         filho.appendChild(neto2);
     }
 
@@ -75,9 +77,10 @@
        
         var neto2 = document.createElement("div");
         $(neto2).addClass('boxAnswer');
+        
         neto2.innerHTML=value;
         filho.appendChild(neto2);
-
+        // escrever(value, neto2);
         efeitoCarregamento();
     }
 
@@ -121,3 +124,13 @@ function efeitoCarregamento(){
         }, 600);
        
 }
+
+//Função efeito digitação do texto
+function escrever(str, el) {
+    var char = str.split('').reverse();
+    var typer = setInterval(function() {
+      if (!char.length) return clearInterval(typer);
+      var next = char.pop();
+      el.innerHTML += next;
+    }, 40);
+  }
