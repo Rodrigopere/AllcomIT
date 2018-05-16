@@ -1,50 +1,123 @@
 
-var robo=[
-    {question:'1ª - Qual o <strong>dia do seu nascimento</strong>?',
-        answer: ['02','30','14','17','21']
-    },
-    {question:'2ª - Quais os <strong>4 últimos dígitos de seu número de celular?</strong>',
-        answer: ['4871','1210','7040','2220','9877']
-    },
-    {question:'3º - Qual é o <strong>primeiro nome de sua mãe</strong>?',
-        answer: ['CARLA','SABRINA','MARIA','PAULA','CAROLINA']
-    }
-]
+    //simulação de dados oriundos do servidor
+    var robo=[
+        {question:'1ª - Qual o <strong>dia do seu nascimento</strong>?',
+            answer: ['02','30','14','17','21']
+        },
+        {question:'2ª - Quais os <strong>4 últimos dígitos de seu número de celular?</strong>',
+            answer: ['4871','1210','7040','2220','9877']
+        },
+        {question:'3º - Qual é o <strong>primeiro nome de sua mãe</strong>?',
+            answer: ['CARLA','SABRINA','MARIA','PAULA','CAROLINA']
+        }
+    ]
 
-//pega primeira pergunta e exibe na tela
-function pushQuestion(){
-            alert("mensagem teste modificação functions!");
-            $("#answer_robo").empty();
-            firstElement = robo.shift();   
-            if (firstElement!=undefined){
-                var pai = document.getElementById("pagebody");
-                var filho = document.createElement("div");
-                $(filho).addClass('question row');
-                filho.innerHTML=firstElement.question;
-                pai.appendChild(filho);      
+
+    //pega primeira pergunta e exibe na tela
+    function pushQuestion(){
+        //Esvazia opções anteriores de resposta
+        $("#answer_robo").empty();
         
-                //Criando as opções de resposta
-                firstElement.answer.forEach(function (element) {
-                    var pai = document.getElementById("answer_robo");
-                    var filho = document.createElement("li");
-                    filho.setAttribute('onclick', 'insertAnswer(this.value)');
-                    $(filho).addClass('option');
-                    filho.value=element;
-                    filho.innerHTML=element;
-                    pai.appendChild(filho);                
-                });
-            }else{
-                alert("não existem mais perguntas");
-            }
-}
+        //pega próximo elemento da fila
+        firstElement = robo.shift();
 
-//Cria resposta selecionada pelo Usuário
-function insertAnswer (value){
+        console.log("elementos");
+        console.log(firstElement);
+
+        if (firstElement!=undefined){
+            createQuestion(firstElement);                
+
+            //Para cada opção de resposta
+            firstElement.answer.forEach(function (element) {
+                //Cria elemento de resposta
+                createAnswer(element);              
+            });
+        }else{
+            alert("não existem mais perguntas");
+        }
+    }
+
+
+    //Cria elemento de pergunta ao usuário
+    function createQuestion(firstElement){
+        var pai = document.getElementById("pagebody");
+        var filho = document.createElement("div");
+        $(filho).addClass('question row');
+        pai.appendChild(filho); 
+
+        var neto1 = document.createElement("div");
+        $(neto1).addClass('nd');
+        filho.appendChild(neto1); 
+            var img = document.createElement("img");
+            img.setAttribute('src', 'images/ND.png');
+            neto1.appendChild(img);
+       
+        var neto2 = document.createElement("div");
+        $(neto2).addClass('boxQuestion');
+        neto2.innerHTML=firstElement.question;
+        filho.appendChild(neto2);
+    }
+
+
+    //Cria resposta selecionada pelo Usuário
+    function insertAnswer (value){
+        var pai = document.getElementById("pagebody");
+        var filho = document.createElement("div");
+        $(filho).addClass('answer row');
+        pai.appendChild(filho); 
+
+        var neto1 = document.createElement("div");
+        $(neto1).addClass('m');
+        filho.appendChild(neto1); 
+            var img = document.createElement("img");
+            img.setAttribute('src', 'images/m.png');
+            neto1.appendChild(img);
+       
+        var neto2 = document.createElement("div");
+        $(neto2).addClass('boxAnswer');
+        neto2.innerHTML=value;
+        filho.appendChild(neto2);
+
+        efeitoCarregamento();
+    }
+
+
+    //Cria opções de elementos de resposta (usuário escolhe um)
+    function createAnswer(element){
+        var pai = document.getElementById("answer_robo");
+        var filho = document.createElement("li");
+        filho.setAttribute('onclick', 'insertAnswer(this.value)');
+        $(filho).addClass('option');
+        filho.value=element;
+        filho.innerHTML=element;
+        pai.appendChild(filho); 
+    }
+
+//função que gera o efeito de pontilhado
+function efeitoCarregamento(){
     var pai = document.getElementById("pagebody");
-    var filho = document.createElement("div");
-    $(filho).addClass('answer row');
-    filho.innerHTML=value;
-    pai.appendChild(filho);
-    pushQuestion();
-}
+        var filho = document.createElement("div");
+        $(filho).addClass('efeito question row');
+        pai.appendChild(filho);
+        filho.innerHTML=".";
+        
+        var repeticao=1;
+        var cores=['rgb(34, 144, 216)', 'rgb(90, 172, 226)', 'rgb(133, 199, 235)']
 
+       var efeito = setInterval(function(){
+            cor = cores.shift();
+
+            if(repeticao<3){
+                filho.innerHTML+="<div style = 'color:"+cor+"; display: inline-block'>.</div>";
+            }
+            repeticao++;
+
+            if(repeticao>=4){
+                $(".efeito").remove();
+
+                pushQuestion(); //chama próxima pergunta
+                clearInterval(efeito); //para chamada de execução da pergunta
+            }
+        }, 600);
+       
+}

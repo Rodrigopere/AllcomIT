@@ -39,15 +39,27 @@ File: Layout CSS
 /* #3abbe8 */
 
 .question{
-	border: 2px solid red;
-	margin: 20px;
+	/* border: 2px solid red; */
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	display: block;
 	color: #46484d;
 }
 
+.efeito{
+	height: 50px;
+	color: rgb(34, 144, 216);
+	font-size: 30pt;
+}
+
 .answer{
-	border: 2px solid blue;
-	margin: 20px;
+	/* border: 2px solid blue; */
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	display: block;
 	color: #46484d;
 	text-align: right;
@@ -59,8 +71,8 @@ File: Layout CSS
 	text-align: center;
 	line-height: 55px;
 	height: 55px;
-	width: 100px;
-	border-radius: 5px;
+	width: 130px;
+	border-radius: 10px;
 	font-size: 8pt;
 	font-weight: bold;
 	border: 2px solid #3abbe8;
@@ -68,7 +80,6 @@ File: Layout CSS
 
 
 .logos{
-	/* border: 2px solid blue; */
 	padding-top: 25px;
 	padding-bottom:25px;
 	text-align: center;
@@ -85,7 +96,8 @@ File: Layout CSS
 }
 
 .pagefooter{
-	height: 180px;
+	height: 215px;
+	line-height: 215px;
 	width: 100%;
 	background-color: #3abbe8;
 	position: fixed;
@@ -98,17 +110,97 @@ File: Layout CSS
 	background-color: rgb(130, 214,255);
 }
 
-.pagefooter nav{padding:55px 0; text-transform:uppercase;}
+
+.boxQuestion {
+    position:relative;
+}
+.boxQuestion:before {
+    content:'';
+    position:absolute;
+    left:-12px;
+    top:0;
+    border-bottom: 20px solid transparent;
+    border-right:20px solid #f2f3f3;
+}
+
+
+.boxAnswer {
+    position:relative;
+}
+.boxAnswer:after {
+    content:'';
+    position:absolute;
+    right:-12px;
+    top:0;
+    border-bottom: 20px solid transparent;
+	border-left:20px solid #383a40;
+}
+
+
+.nd{
+	/* border: 2px solid red; */
+	position: relative;
+	float: left;
+}
+
+.m{
+	/* border: 2px solid blue; */
+	position: relative;
+	float: right;
+}
+
+
+
+.boxAnswer{
+	background-color: #383a40;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 0 auto;
+	color: white;
+	position: relative;
+	display: inline-block;
+	height: 80px;
+	line-height: 80px;
+	border-radius: 10px;
+}
+
+
+.boxQuestion{
+	border-radius: 10px;
+	background-color: #f2f3f3;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 0 auto;
+	position: relative;
+	display: inline-block;
+	height: 80px;
+	line-height: 80px;
+}
+
+.pagefooter nav{padding:0; text-transform:uppercase;}
 .pagefooter ul li{display:inline-block; margin-right:30px;}
 .pagefooter ul li::after{margin-left:10px;}
 .pagefooter ul li:last-child::after{margin-left:0;}
 
 #pagebody{
 	min-height: 500px;
+	margin-bottom: 300px;
+}
+
+
+
+.m, .nd{
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
 .right{
+	text-align: left;
+	font-size: 7pt;
+	padding: 0;
+	margin: 0;
 	margin-left: 55%;
+	display: inline-block
 }
 
 #pageintro article{max-width:75%;}
