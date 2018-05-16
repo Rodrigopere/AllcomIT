@@ -63,7 +63,7 @@ a:focus, a:hover {
 /*banner*/
 .w3lshome {
     /* background: url(images/banner3.jpg); */
-    background: url('../images/banner1.jpg')no-repeat;
+    background: url('../images/imagem_casal.png')no-repeat;
     min-height: 1080px;
     background-size: cover;
 	text-align: center;
@@ -201,6 +201,52 @@ div#about {
     margin-left: 38px;
     margin-right: 28px;
 }
+
+.button {
+    background: linear-gradient(to right, #0065A8 , #2290D8);
+    border: none;
+    color: white;
+    width: 330px;
+    height: 54px;
+    padding: 15px 32px;
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 0.56px;
+    font-weight: 800;
+    line-height: 16px;
+    font-family: "Nunito Sans";
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 41%;
+}
+
+.button1 {
+    background: linear-gradient(to right, #0065A8 , #2290D8);
+    border: none;
+    color: white;
+    width: 330px;
+    height: 54px;
+    padding: 15px 32px;
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 0.56px;
+    font-weight: 800;
+    line-height: 16px;
+    font-family: "Nunito Sans";
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*.button2 {width: 50%;}*/
+
+
+.space {
+    height: 60px;
+
+}
+
 .agile-list span.fa.fa-arrow-right {
     color: blue;
 }
@@ -238,28 +284,34 @@ div#about {
 /* //about */
 /*-- team-inner-page --*/
 .team {
-    padding: 5% 0px;
+    padding: 5% 0px 180px;
 	background: #f9f9f9;
 }
 .team h3,.w3l_team_grid,.portfolio h3,h3.title,.mail h3{
 	text-align:center;
 }
 .w3l_team_grid h4{
-	font-size: 1.2em;
-    color: #606060;
+    font-size: 18px;
+    font-family: "Nunito Sans";
+    font-weight: bold;
+    line-height: 27px;
+    text-align: center;
+    color: #383A40;
     margin: 0em 0 .5em;
     padding: 1.6em 0em 0em 0em;
 }
 .w3l_team_grid p{
-	font-size: 0.9em;
-    color: #000;
+	font-size: 14px;
+    color:#383A40;
     margin: 1em 0 .5em;
+    font-family: "Nunito Sans";
     line-height: 2em;
 	font-weight: 600;
 }
 .view {
 	overflow: hidden;
     position: relative;
+    text-align: -webkit-center;
 }
 .view .mask,.view .content {
    position: absolute;
@@ -966,6 +1018,58 @@ div#contact {
 .blog-txt p {
     line-height: 2.3em;
 }
+.button {
+    background: linear-gradient(to right, #0065A8 , #2290D8);
+    border: none;
+    color: white;
+    width: 330px;
+    height: 54px;
+    padding: 15px 32px;
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 0.56px;
+    font-weight: 800;
+    line-height: 16px;
+    font-family: "Nunito Sans";
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 38%;
+}
+
+.button1 {
+    background: linear-gradient(to right, #0065A8 , #2290D8);
+    border: none;
+    color: white;
+    width: 330px;
+    height: 54px;
+    padding: 15px 32px;
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 0.56px;
+    font-weight: 800;
+    line-height: 16px;
+    font-family: "Nunito Sans";
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.about-txt, .about-img {
+    flex: 1;
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-flex: 1;
+    -ms-flex: 1;
+    margin-left: -16px;
+}
+
+.about-img img.img-responsive {
+    right: 0px;
+    position: absolute;
+}
+
+
 }
 @media screen and (max-width: 1280px){
 .blog-txt {
