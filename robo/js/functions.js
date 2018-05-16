@@ -54,9 +54,9 @@
        
         var neto2 = document.createElement("div");
         $(neto2).addClass('boxQuestion');
-        escrever(firstElement.question, neto2);
-
-
+        
+        //função com efeito de máquina de escrever
+        typingEffect(firstElement.question, neto2);
         filho.appendChild(neto2);
     }
 
@@ -80,7 +80,6 @@
         
         neto2.innerHTML=value;
         filho.appendChild(neto2);
-        // escrever(value, neto2);
         efeitoCarregamento();
     }
 
@@ -126,7 +125,7 @@ function efeitoCarregamento(){
 }
 
 //Função efeito digitação do texto
-function escrever(str, el) {
+function typingEffect (str, el) {
     var char = str.split('').reverse();
     var typer = setInterval(function() {
       if (!char.length) return clearInterval(typer);
