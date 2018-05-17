@@ -56,6 +56,7 @@
         $(neto2).addClass('boxQuestion');
         
         //função com efeito de máquina de escrever
+        // neto2.innerHTML=firstElement.question;
         typingEffect(firstElement.question, neto2);
         filho.appendChild(neto2);
     }
@@ -116,12 +117,10 @@ function efeitoCarregamento(){
 
             if(repeticao>=4){
                 $(".efeito").remove();
-
                 pushQuestion(); //chama próxima pergunta
                 clearInterval(efeito); //para chamada de execução da pergunta
             }
         }, 600);
-       
 }
 
 //Função efeito digitação do texto
@@ -131,5 +130,5 @@ function typingEffect (str, el) {
       if (!char.length) return clearInterval(typer);
       var next = char.pop();
       el.innerHTML += next;
-    }, 40);
+    }, 30);
   }
