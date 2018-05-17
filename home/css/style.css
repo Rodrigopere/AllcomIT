@@ -70,7 +70,8 @@ a.navbar-brand.w3-logo:hover {
 }
 .w3ls-nav li a.scroll {
     color: #fff;
-    font-size: 0.9em;
+    font-size: 0.83em;
+    padding: 16px 25px;
 }
 .w3ls-nav li a.scroll:hover {
     color: yellow;
@@ -276,6 +277,8 @@ img {
 .agile-list li {
     padding: 10px 0px;
 }
+
+
 .about-img img.img-responsive {
     right: 0px;
     position: absolute;
