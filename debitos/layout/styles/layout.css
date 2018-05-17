@@ -52,7 +52,27 @@ File: Layout CSS
 	text-align: center;
 	border-radius: 50%;
 	border: 10px solid rgb(83,142,181);
-	z-index: 9999999;
+}
+
+.fone{
+	font-size: 18pt;
+	font-weight: bold;
+}
+
+.contatos{
+	border: 2px solid #4da0d6;
+	display: inline-block;
+	height: 80px;
+	line-height: 38px;
+	width: 230px;
+}
+
+.paginaTotal{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	/* border: 2px solid red; */
+	background-image: linear-gradient( to right, #0066a8 50%, #0e77bc);;
 }
 
 
@@ -110,18 +130,36 @@ File: Layout CSS
 	text-align: center;
 	line-height: 1.6em;
 	font-weight: bold;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
 
-
-.tituloCentraldebito{
+.debitos{
 	position: relative;
 	color: white;
-	font-size: 2.2em;
 	text-align: center;
-	line-height: 1.4em;
 	font-weight: bold;
-	/* padding-bottom: 30px; */
+	margin-top: 30px;
+    font-size: 22pt;
+	padding-top: 20px;
+}
+.contato{
+	position: relative;
+	color: white;
+	text-align: center;
+	/* font-weight: bold; */
+	margin-top: 10px;
+    /* font-size: 20pt; */
+	padding-top: 20px;
+}
+.tituloCentraldebito{
+	padding-top: 20px;
+	position: relative;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 30px;
+    font-size: 40pt;
+    margin-bottom: 20px;
 }
 
 .pagefooter{
@@ -439,8 +477,8 @@ td{border-width:0 1px;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#CBCBCB;}
-a{color:#FF5723;}
+body{color:#CBCBCB; }
+a{color:white; text-decoration: underline; }
 a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
 label span{color:#FF0000; background-color:inherit;}
