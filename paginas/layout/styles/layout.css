@@ -396,6 +396,12 @@ textarea:-moz-placeholder { color:white; }​
 	margin-bottom: 300px;
 }
 
+#bodyDebitos{
+	position: relative;
+	background-color: #f2f3f3;
+	min-height: 800px;
+	/* margin-bottom: 300px; */
+}
 
 
 .m, .nd{
