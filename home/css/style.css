@@ -167,13 +167,49 @@ div#about {
     width: 108%;
 }
 
+.vantagens{
+    margin-top: 100px;
+    margin-bottom: 52px;
+    /* border: 2px solid blue; */
+    position: relative;
+    width: 108%;
+}
+
+.opcao-vantagens {
+    position: relative;
+    display: inline-block;
+    font-family: "Avenir";
+    color: #2290D8;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.89px;
+    line-height: 29px;
+}
+
 
 .quemsomos{
     margin-top: 130px;
     margin-bottom: 52px;
-    /* border: 2px solid blue; */
     position: relative;
     width: 100%;
+}
+
+
+.quemsomos4{
+    margin-top: 130px;
+    margin-bottom: 52px;
+    position: relative;
+    width: 100%;
+}
+
+.opcao4 {
+    position: relative;
+    display: inline-block;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.89px;
+    line-height: 29px;
 }
 
 .about-txt2 h2 {
@@ -184,7 +220,19 @@ div#about {
     height: 88px;
     width: 149px;
     color: #fff;
-    font-family: Avenir;
+    font-family: Avenir LT Std;
+    font-size: 40px;
+}
+
+.about-txt4 h {
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: -1.36px;
+    line-height: 44px;
+    height: 88px;
+    width: 149px;
+    color: #fff;
+    font-family: Avenir LT Std;
     font-size: 40px;
 }
 
@@ -194,6 +242,11 @@ div#about {
 }
 
 .about-txt3 p {
+    padding-right: 10px;
+    line-height: 2em;
+}
+
+.about-txt4 p {
     padding-right: 10px;
     line-height: 2em;
 }
@@ -242,10 +295,10 @@ div#about {
 
 
 
-#tudo {
+#quemsomos-geral {
 	width: 137%;
 }
-#tudo1 {
+#quemsomos1 {
 	position: relative;
     padding: 2% 5% 0% 5%;
     font-size: 13px;
@@ -255,7 +308,7 @@ div#about {
     float: left;
     border: solid 1px #4785AB;
 }
-#tudo2 {
+#quemsomos2 {
 	position: relative;
     padding: 2% 2% 0% 5%;
     font-size: 13px;
@@ -266,25 +319,25 @@ div#about {
     border: solid 1px #4785AB;
 }
 
-#tudo3 {
+#footer {
 	width: 137%;
 }
-#tudo4 {
+#footer1 {
 	position: relative;
     padding: 1% 0% 0% 5%;
     font-size: 14px;
     width: 36%;
     line-height: 2em;
-    height: 230px;
+    height: 100px;
     float: left;
 }
-#tudo5 {
+#footer2 {
 	position: relative;
     padding: 1% 0% 0% 0%;
     font-size: 14px;
     width: 36%;
     line-height: 2em;
-    height: 230px;
+    height: 100px;
     float: left;
 }
 
@@ -559,6 +612,20 @@ img {
     line-height: 44px;
     height: 88px;
     width: 149px;
+    color: #2290D8;
+    /* font-family: Avenir; */
+    font-size: 40px;
+}
+
+.about-txt h4 {
+    font-family: Avenir LT Std;
+    /* font-weight: bold; */
+    color: #0296F8;
+    font-weight: 800;
+    letter-spacing: -1.36px;
+    line-height: 44px;
+    height: 88px;
+    width: 100%;
     color: #2290D8;
     /* font-family: Avenir; */
     font-size: 40px;
@@ -1283,9 +1350,13 @@ div#contact {
     background: #fff;
 }
 .agileits-w3layouts p{
-	color:#333;
-	font-size:.9em;
-	margin:0;
+    color: #383A40;
+    font-size: 13px;
+    line-height: 26px;
+    font-weight: 600;
+    letter-spacing: 0.07px;
+    margin: 0;
+    font-family: "Nunito Sans";
 }
 .agileits-w3layouts p a{
 	color:#FFFFFF;
