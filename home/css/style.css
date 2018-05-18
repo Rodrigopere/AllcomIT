@@ -167,13 +167,49 @@ div#about {
     width: 108%;
 }
 
+.vantagens{
+    margin-top: 100px;
+    margin-bottom: 52px;
+    /* border: 2px solid blue; */
+    position: relative;
+    width: 108%;
+}
+
+.opcao-vantagens {
+    position: relative;
+    display: inline-block;
+    font-family: "Avenir";
+    color: #2290D8;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.89px;
+    line-height: 29px;
+}
+
 
 .quemsomos{
     margin-top: 130px;
     margin-bottom: 52px;
-    /* border: 2px solid blue; */
     position: relative;
     width: 100%;
+}
+
+
+.quemsomos4{
+    margin-top: 130px;
+    margin-bottom: 52px;
+    position: relative;
+    width: 100%;
+}
+
+.opcao4 {
+    position: relative;
+    display: inline-block;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.89px;
+    line-height: 29px;
 }
 
 .about-txt2 h2 {
@@ -184,11 +220,33 @@ div#about {
     height: 88px;
     width: 149px;
     color: #fff;
-    font-family: Avenir;
+    font-family: Avenir LT Std;
+    font-size: 40px;
+}
+
+.about-txt4 h {
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: -1.36px;
+    line-height: 44px;
+    height: 88px;
+    width: 149px;
+    color: #fff;
+    font-family: Avenir LT Std;
     font-size: 40px;
 }
 
 .about-txt2 p {
+    padding-right: 10px;
+    line-height: 2em;
+}
+
+.about-txt3 p {
+    padding-right: 10px;
+    line-height: 2em;
+}
+
+.about-txt4 p {
     padding-right: 10px;
     line-height: 2em;
 }
@@ -213,6 +271,77 @@ div#about {
     letter-spacing: 0.89px;
     line-height: 29px;
 }
+
+.quemsomos2{
+    position: relative;
+    display: inline-block;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.89px;
+    line-height: 29px;
+}
+
+.quemsomos3{
+    position: relative;
+    display: inline-block;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.89px;
+    line-height: 29px;
+}
+
+
+
+
+#quemsomos-geral {
+	width: 137%;
+}
+#quemsomos1 {
+	position: relative;
+    padding: 2% 5% 0% 5%;
+    font-size: 13px;
+    width: 36%;
+    line-height: 2em;
+    height: 230px;
+    float: left;
+    border: solid 1px #4785AB;
+}
+#quemsomos2 {
+	position: relative;
+    padding: 2% 2% 0% 5%;
+    font-size: 13px;
+    width: 36%;
+    line-height: 2em;
+    height: 230px;
+    float: left;
+    border: solid 1px #4785AB;
+}
+
+#footer {
+	width: 137%;
+}
+#footer1 {
+	position: relative;
+    padding: 1% 0% 0% 5%;
+    font-size: 14px;
+    width: 36%;
+    line-height: 2em;
+    height: 100px;
+    float: left;
+}
+#footer2 {
+	position: relative;
+    padding: 1% 0% 0% 0%;
+    font-size: 14px;
+    width: 36%;
+    line-height: 2em;
+    height: 100px;
+    float: left;
+}
+
+
 
 
 .logo-negocie-digital {	
@@ -487,6 +616,20 @@ img {
     /* font-family: Avenir; */
     font-size: 40px;
 }
+
+.about-txt h4 {
+    font-family: Avenir LT Std;
+    /* font-weight: bold; */
+    color: #0296F8;
+    font-weight: 800;
+    letter-spacing: -1.36px;
+    line-height: 44px;
+    height: 88px;
+    width: 100%;
+    color: #2290D8;
+    /* font-family: Avenir; */
+    font-size: 40px;
+}
 /* //about */
 /*-- team-inner-page --*/
 .team {
@@ -677,7 +820,7 @@ span.service-icon.fa.fa-book.fa-4x, span.service-icon.fa.fa-graduation-cap.fa-4x
 
 /* services */
 .w3-services {
-    padding: 5% 0px;
+    padding: 0% 0px;
 	background: url('../images/bg-about.jpg') no-repeat;
     color: white;
 }
@@ -1207,9 +1350,13 @@ div#contact {
     background: #fff;
 }
 .agileits-w3layouts p{
-	color:#333;
-	font-size:.9em;
-	margin:0;
+    color: #383A40;
+    font-size: 13px;
+    line-height: 26px;
+    font-weight: 600;
+    letter-spacing: 0.07px;
+    margin: 0;
+    font-family: "Nunito Sans";
 }
 .agileits-w3layouts p a{
 	color:#FFFFFF;
