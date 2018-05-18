@@ -36,6 +36,11 @@ File: Layout CSS
 	background-image: linear-gradient( to right, #0066a8 50%, #0e77bc);
 }
 
+
+.centro{
+    padding-top: 8%; 
+}
+
 .fundo{
 	position: fixed;
 	background-color: #0668a7;
@@ -65,8 +70,64 @@ File: Layout CSS
 	height: 80px;
 	line-height: 38px;
 	width: 230px;
-	
 }
+.textCpf{
+	text-align: center;
+	letter-spacing: 2px;
+}
+.smile{
+	margin-top: -40px;
+}
+
+.validate{
+	padding-top: -20px;
+	/* adding: 0px; */
+	border-radius: 50%;
+	background-color: #10e2e6;
+	color: #2b78ab;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 12pt;
+	display: inline-block;
+
+}
+.cpf{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    display: inline-block;
+    height: 46px;
+    font-weight: bold;
+    line-height: 9px;
+	/* font-size: 14pt; */
+	font-size: 22pt;
+	
+    width: 270px;
+    text-align: left;
+    background-color: transparent;
+}
+.centralizado{
+	padding-top: 30px;
+	text-align: center;
+}
+
+.iniatendimento{
+	margin-top: 20px;
+	width: 150px;
+	font-size: 10pt;
+	color: white;
+	font-weight: bold;
+	padding: 20px;
+	line-height: 50px;
+	border-radius: 5px;
+	border: 1px solid white;
+}
+
+::-webkit-input-placeholder  { color:white; }
+input:-moz-placeholder { color:white}
+textarea:-moz-placeholder { color:white; }​
 
 .contato a{
 	padding-bottom: 150px;
@@ -155,9 +216,19 @@ File: Layout CSS
     /* font-size: 20pt; */
 	padding-top: 20px;
 }
+
+.name{
+	color: #10e2e6;
+	display: inline-block;
+}
+.text{
+	display: inline-block;
+}
+
+
 .tituloCentraldebito{
 	line-height: 50pt;
-	padding-top: 20px;
+	/* padding-top: 20px; */
 	position: relative;
 	color: white;
 	text-align: center;
@@ -487,7 +558,7 @@ a{color:white; text-decoration: underline; }
 a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
 label span{color:#FF0000; background-color:inherit;}
-input:focus, textarea:focus, *:required:focus{border-color:#FF5723;}
+input:focus, textarea:focus, *:required:focus{border: none}
 .overlay{color:#CBCBCB; background-color:inherit;}
 .overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
 

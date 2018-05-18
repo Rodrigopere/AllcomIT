@@ -11,8 +11,7 @@
             answer: ['CARLA','SABRINA','MARIA','PAULA','CAROLINA']
         }
     ]   
-
-
+    
     //pega primeira pergunta e exibe na tela
     function pushQuestion(){
         //Esvazia opções anteriores de resposta
