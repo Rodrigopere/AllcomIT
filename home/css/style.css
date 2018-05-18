@@ -70,8 +70,13 @@ a.navbar-brand.w3-logo:hover {
 }
 .w3ls-nav li a.scroll {
     color: #fff;
-    font-size: 0.83em;
+    font-size: 12px;
     padding: 16px 25px;
+    font-weight: 800;
+    letter-spacing: 0.62px;
+    line-height: 23px;
+    text-align: center;
+    font-family: "Nunito Sans";
 }
 .w3ls-nav li a.scroll:hover {
     color: yellow;
@@ -153,19 +158,60 @@ div#about {
     border-left: 2px solid #DADCDE;
 
 }
+
 .comofunciona{
     margin-top: 194px;
     margin-bottom: 52px;
     /* border: 2px solid blue; */
     position: relative;
+    width: 108%;
+}
+
+
+.quemsomos{
+    margin-top: 130px;
+    margin-bottom: 52px;
+    /* border: 2px solid blue; */
+    position: relative;
     width: 100%;
 }
-.opcao{
-    /* border: 2px solid red; */
+
+.about-txt2 h2 {
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: -1.36px;
+    line-height: 44px;
+    height: 88px;
+    width: 149px;
+    color: #fff;
+    font-family: Avenir;
+    font-size: 40px;
+}
+
+.about-txt2 p {
+    padding-right: 10px;
+    line-height: 2em;
+}
+
+.opcao2{
     position: relative;
     display: inline-block;
-    /* min-width: 30px; */
-    /* min-height: 30px; */
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.89px;
+    line-height: 29px;
+}
+
+
+.opcao{
+    position: relative;
+    display: inline-block;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.89px;
+    line-height: 29px;
 }
 
 
@@ -205,10 +251,84 @@ img {
     display: inline-block;
 }
 
-.line {	
+.line10 {	
     box-sizing: border-box;	
     width: 125%;	
     border: 1px solid #EAECED;}
+
+
+
+
+.line {	
+    box-sizing: border-box;	
+    height: 1px;	
+    width: 48px;	
+    border: 1px solid #FFFFFF;
+    margin-left: -100%;
+}
+
+.line-copy {	
+    box-sizing: border-box;	
+    height: 1px;	
+    width: 48px;	
+    border: 1px solid #FFFFFF;
+    margin-left: -80%;
+}
+
+.line-copy-2 {	
+    box-sizing: border-box;	
+    height: 1px;	
+    width: 48px;	
+    border: 1px solid #FFFFFF;
+    margin-left: -60%;
+}
+
+.line-copy-3 {	
+    box-sizing: border-box;	
+    height: 1px;	
+    width: 48px;	
+    border: 1px solid #FFFFFF;
+    margin-left: -40%;
+}
+
+.line-2-copy {	
+    box-sizing: border-box;	
+    height: 24px;	
+    width: 3px;	
+    border: 2px solid #FFFFFF;}
+
+
+.digite-codigo {
+    /*width: 100%;*/
+    padding: 6% 40%;
+}
+
+.codigo {	
+    height: 0.42%;	
+    width: 100%;	
+    margin-top: 63px;
+    color: #FFFFFF;	
+    font-family: "Nunito Sans";	
+    font-size: 12px;	
+    font-weight: 600;	
+    letter-spacing: -0.24px;
+    padding: 21px 0px 3px 0px;	
+    line-height: 16px;
+}
+
+.sem-codigo {	
+    height: 0.42%;	
+    width: 100%;	
+    margin-top: 4px;
+    color: #FFFFFF;	
+    font-family: "Nunito Sans";	
+    font-size: 12px;	
+    font-weight: 600;	
+    letter-spacing: -0.24px;
+    padding: 21px 0px 3px 0px;	
+    line-height: 16px;
+    text-decoration: underline;
+}
 
 .number{
     border-radius: 50%;
@@ -262,6 +382,66 @@ img {
     margin: 4px 2px;
     cursor: pointer;
 }
+
+.button0 {
+    background-color: rgba(255, 0, 0, 0);
+    border: 1px solid #FFFFFF;
+    color: #fff;
+    width: 255px;
+    height: 54px;
+    padding: 15px 32px;
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 0.56px;
+    font-weight: 800;
+    line-height: 16px;
+    font-family: "Nunito Sans";
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 136%;
+}
+
+
+.scroll-downs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    
+    width :34px;
+    height: 55px;
+  }
+
+  /*.mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }*/
+
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }
+
+
 
 /*.button2 {width: 50%;}*/
 
