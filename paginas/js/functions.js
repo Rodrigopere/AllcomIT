@@ -1,16 +1,16 @@
 
     //simulação de dados oriundos do servidor
     var robo=[
-        {question:'1ª - Qual o <strong>dia do seu nascimento</strong>?',
+        {question:'1ª - Qual o dia do seu nascimento?',
             answer: ['02','30','14','17','21']
         },
-        {question:'2ª - Quais os <strong>4 últimos dígitos de seu número de celular?</strong>',
+        {question:'2ª - Quais os 4 últimos dígitos de seu número de celular?',
             answer: ['4871','1210','7040','2220','9877']
         },
-        {question:'3º - Qual é o <strong>primeiro nome de sua mãe</strong>?',
+        {question:'3º - Qual é o primeiro nome de sua mãe?',
             answer: ['CARLA','SABRINA','MARIA','PAULA','CAROLINA']
         }
-    ]
+    ]   
 
 
     //pega primeira pergunta e exibe na tela

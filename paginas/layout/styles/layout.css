@@ -65,8 +65,12 @@ File: Layout CSS
 	height: 80px;
 	line-height: 38px;
 	width: 230px;
+	
 }
 
+.contato a{
+	padding-bottom: 150px;
+}
 .paginaTotal{
 	position: fixed;
 	height: 100%;
@@ -152,6 +156,7 @@ File: Layout CSS
 	padding-top: 20px;
 }
 .tituloCentraldebito{
+	line-height: 50pt;
 	padding-top: 20px;
 	position: relative;
 	color: white;
