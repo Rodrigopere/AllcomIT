@@ -193,6 +193,11 @@ div#about {
     line-height: 2em;
 }
 
+.about-txt3 p {
+    padding-right: 10px;
+    line-height: 2em;
+}
+
 .opcao2{
     position: relative;
     display: inline-block;
@@ -213,6 +218,77 @@ div#about {
     letter-spacing: 0.89px;
     line-height: 29px;
 }
+
+.quemsomos2{
+    position: relative;
+    display: inline-block;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.89px;
+    line-height: 29px;
+}
+
+.quemsomos3{
+    position: relative;
+    display: inline-block;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.89px;
+    line-height: 29px;
+}
+
+
+
+
+#tudo {
+	width: 137%;
+}
+#tudo1 {
+	position: relative;
+    padding: 2% 5% 0% 5%;
+    font-size: 13px;
+    width: 36%;
+    line-height: 2em;
+    height: 230px;
+    float: left;
+    border: solid 1px #4785AB;
+}
+#tudo2 {
+	position: relative;
+    padding: 2% 2% 0% 5%;
+    font-size: 13px;
+    width: 36%;
+    line-height: 2em;
+    height: 230px;
+    float: left;
+    border: solid 1px #4785AB;
+}
+
+#tudo3 {
+	width: 137%;
+}
+#tudo4 {
+	position: relative;
+    padding: 1% 0% 0% 5%;
+    font-size: 14px;
+    width: 36%;
+    line-height: 2em;
+    height: 230px;
+    float: left;
+}
+#tudo5 {
+	position: relative;
+    padding: 1% 0% 0% 0%;
+    font-size: 14px;
+    width: 36%;
+    line-height: 2em;
+    height: 230px;
+    float: left;
+}
+
+
 
 
 .logo-negocie-digital {	
@@ -677,7 +753,7 @@ span.service-icon.fa.fa-book.fa-4x, span.service-icon.fa.fa-graduation-cap.fa-4x
 
 /* services */
 .w3-services {
-    padding: 5% 0px;
+    padding: 0% 0px;
 	background: url('../images/bg-about.jpg') no-repeat;
     color: white;
 }
