@@ -341,8 +341,13 @@ div#about {
     float: left;
 }
 
+.fill-1 {	
+    height: 14.26px;
+    width: 11.43px;}
 
-
+.Logo-Footer {	
+    height: 26px;
+    width: 40px;}
 
 .logo-negocie-digital {	
     height: 42px;
@@ -385,7 +390,11 @@ img {
     width: 125%;	
     border: 1px solid #EAECED;}
 
-
+.line11 {
+        box-sizing: border-box;
+        width: 200%;
+        border: 1px solid #EAECED;
+}
 
 
 .line {	
@@ -577,6 +586,11 @@ img {
 
 .space {
     height: 60px;
+
+}
+
+.space-footer {
+    height: 20px;
 
 }
 
@@ -872,7 +886,7 @@ span.service-icon.fa.fa-bicycle.fa-4x, span.service-icon.fa.fa-graduation-cap.fa
 	background-color: rgba(0, 0, 0, 0.75);
     color: white;
 	background: url('../images/stats.jpg') no-repeat;
-    background-size: cover;
+    
 }
 .agile-stats h3.center {
 	text-align: center;
@@ -1346,7 +1360,7 @@ div#contact {
 /*-- //footer --*/
 .agileits-w3layouts{
 	text-align: center;
-    padding: 5em 0;
+    padding: 3em 0;
     background: #fff;
 }
 .agileits-w3layouts p{

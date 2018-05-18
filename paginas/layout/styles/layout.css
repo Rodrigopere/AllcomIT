@@ -140,6 +140,14 @@ textarea:-moz-placeholder { color:white; }​
 	background-image: linear-gradient( to right, #0066a8 50%, #0e77bc);;
 }
 
+.BG-concluida{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	/* border: 2px solid red; */
+	background-image: url('../images/bg_poupando.png') no-repeat;
+}
+
 
 .question{
 	/* border: 2px solid red; */
@@ -217,6 +225,40 @@ textarea:-moz-placeholder { color:white; }​
 	padding-top: 20px;
 }
 
+.DesejaNegociar{
+	position: relative;
+	color: white;
+	text-align: center;
+	margin-top: 10px;
+	padding-top: 20px;
+	font-family: "Nunito Sans";
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: -0.26px;
+	line-height: 18px;
+}
+
+.button {
+    background: #fff;
+    border: none;
+    color: #3ABBE8;;
+    width: 252px;
+    height: 54px;
+    padding: 15px 32px;
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 0.56px;
+	font-weight: 800;
+	margin-left: 40% !important;
+	margin-top: 60px !important;
+    line-height: 16px;
+    font-family: "Nunito Sans";
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
 .name{
 	color: #10e2e6;
 	display: inline-block;
@@ -236,6 +278,30 @@ textarea:-moz-placeholder { color:white; }​
 	margin-top: 30px;
     font-size: 40pt;
     margin-bottom: 20px;
+}
+
+.tituloCentralConcluido {
+    line-height: 50pt;
+    position: relative;
+    font-family: Avenir Next LT Pro;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 30px;
+    letter-spacing: -1.22px;
+    line-height: 69px;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.ficamos-felizes {		
+	color: #FFFFFF;	
+	font-family: "Nunito Sans";	
+	font-size: 20px;	
+	font-weight: 300;	
+	letter-spacing: 1.11px;	
+	line-height: 27px;	
+	text-align: center;
 }
 
 .pagefooter{
