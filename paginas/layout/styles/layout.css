@@ -392,7 +392,7 @@ textarea:-moz-placeholder { color:white; }​
 	margin: 0;
 }
 .blocomin{
-	border: 1px solid white;
+	/* border: 1px solid white; */
 	position: relative;
 	float: left;
 	width: 10%;
