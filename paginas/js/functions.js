@@ -11,7 +11,47 @@
             answer: ['CARLA','SABRINA','MARIA','PAULA','CAROLINA']
         }
     ]   
+
+        //simulação de dados oriundos do servidor
+        var robonegociacao=[
+             {question:'Você pode pagar à vista todo o valor do seu contrato ou somente as parcelas atrasadas. Em ambas opções você tem descontos incríveis.'}
+            ,{question:'Escolha a melhor opção para você:'}
+            ,{question:'3º - Qual é o primeiro nome de sua mãe?'}
+        ]   
+        
     
+
+    //pega primeira pergunta e exibe na tela
+    function negociacao(){
+        //Esvazia opções anteriores de resposta
+        $("#answer_robo").empty();
+        
+        //pega próximo elemento da fila
+        firstElement = robonegociacao.shift();
+
+        console.log("elementos");
+        console.log(firstElement);
+
+        if (firstElement!=undefined){
+            createQuestion(firstElement, function (callback){
+                if (callback){
+                    alert("terminei de criar minha pergunta")
+                    alert(callback);
+
+                }
+            });
+            
+
+            // if(robonegociacao.length>0){
+
+            //     efeitoCarregamento();
+
+            // }
+        }
+    }
+
+
+
     //pega primeira pergunta e exibe na tela
     function pushQuestion(){
         //Esvazia opções anteriores de resposta
@@ -38,7 +78,7 @@
 
 
     //Cria elemento de pergunta ao usuário
-    function createQuestion(firstElement){
+    function createQuestion(firstElement, callback){
         var pai = document.getElementById("pagebody");
         var filho = document.createElement("div");
         $(filho).addClass('question row');
@@ -56,8 +96,14 @@
         
         //função com efeito de máquina de escrever
         // neto2.innerHTML=firstElement.question;
-        typingEffect(firstElement.question, neto2);
-        filho.appendChild(neto2);
+        typingEffect(firstElement.question, neto2, function (callback){
+            if(callback){
+                efeitoCarregamento(function (callback){
+                    return callback('OI true');
+                });
+            }
+        });
+        filho.appendChild(neto2);        
     }
 
 
@@ -80,7 +126,10 @@
         
         neto2.innerHTML=value;
         filho.appendChild(neto2);
-        efeitoCarregamento();
+        efeitoCarregamento(function (callback){
+            alert("aqui1");
+            alert(callback);
+        });
     }
 
 
@@ -96,7 +145,7 @@
     }
 
 //função que gera o efeito de pontilhado
-function efeitoCarregamento(){
+function efeitoCarregamento(callback){
     var pai = document.getElementById("pagebody");
         var filho = document.createElement("div");
         $(filho).addClass('efeito question row');
@@ -116,17 +165,22 @@ function efeitoCarregamento(){
 
             if(repeticao>=4){
                 $(".efeito").remove();
-                pushQuestion(); //chama próxima pergunta
+                // pushQuestion(); //chama próxima pergunta
                 clearInterval(efeito); //para chamada de execução da pergunta
+                return callback('Ai sim');
             }
         }, 600);
 }
 
 //Função efeito digitação do texto
-function typingEffect (str, el) {
+function typingEffect (str, el, callback) {
+    
     var char = str.split('').reverse();
     var typer = setInterval(function() {
-      if (!char.length) return clearInterval(typer);
+      if (!char.length){
+        clearInterval(typer);
+        return callback(true);
+      }
       var next = char.pop();
       el.innerHTML += next;
     }, 30);
