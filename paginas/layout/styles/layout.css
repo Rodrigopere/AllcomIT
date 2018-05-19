@@ -114,6 +114,20 @@ File: Layout CSS
 	color: white;
 }
 
+
+.fechar{
+    top: 10px;
+    width: 50px;
+    position: relative;
+    font-size: 8pt;
+    color: white;
+    padding: 12px;
+    line-height: 50px;
+    border-radius: 5px;
+    border: 1px solid #439cd7;
+}
+
+
 .iniatendimento{
 	margin-top: 20px;
 	width: 150px;
@@ -145,7 +159,6 @@ textarea:-moz-placeholder { color:white; }​
 	position: fixed;
 	height: 100%;
 	width: 100%;
-	background-image: url('../images/bg_poupando.png') no-repeat;
 }
 
 .col p {
@@ -168,11 +181,74 @@ textarea:-moz-placeholder { color:white; }​
 	display: table;
 }
 
+.lablemin{
+	color: #2d96da;
+	font-size: 10pt;
+	/* font-weight: bold; */
+	display: table;
+}
+
 .anoCarro{
 	display: table;
 	color: #383a40;
 	font-size: 8pt;
 }
+
+.textMin{
+	padding-left: 35px;
+    text-align: left;
+	color: white;
+	font-weight: bold;
+	font-size: 10pt;
+	white-space: nowrap;
+	width: 100%;                   
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.iconMin{
+	margin-right: 10px;
+}
+
+.iconMinACtion{
+	width: 17px;
+	cursor: pointer;
+}
+
+
+.dadosmin{
+	padding-top: 15px;
+	padding-left: 15px;
+    max-width: 80%;
+    /* border: 1px solid orange; */
+	position: relative;
+	float: left;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: translateY( -50% );
+    -moz-transform: translateY( -50% );
+	transform: translateY( -50% );
+	height: 100%;
+}
+
+.actionmin{
+	text-align: center;
+	float: left;
+	padding-top: 30px;
+	height: 100%;
+	bottom: 10px;
+    max-width: 20%;
+    /* border: 1px solid pink; */
+    position: relative;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: translateY( -50% );
+    -moz-transform: translateY( -50% );
+    transform: translateY( -50% );
+}
+
 
 
 .dados{
@@ -185,8 +261,19 @@ textarea:-moz-placeholder { color:white; }​
     -webkit-transform: translateY( -50% );
     -moz-transform: translateY( -50% );
     transform: translateY( -50% );
-	
 }
+
+
+
+.divisoriaMin{
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	margin-top: 15px;
+	border-left: 1px solid #3abbe8;
+	height: 40px;
+}
+
 .divisoria{
 	display: inline-block;
 	position: absolute;
@@ -282,13 +369,75 @@ textarea:-moz-placeholder { color:white; }​
 	border: 1px solid black;
 }
 
+.logoDigital{
+	padding-top: 20px;
+}
+.logosmin{
+	padding-left: 65px;
+	padding-top: 5px;
+	padding-right: 30px;
+	height: 80px;
+	text-align: center;
+}
+
+
+.autorizado{
+	position: relative;
+	width: 100%;
+	color: white;
+	text-align: left;
+	font-size: 7pt;
+	padding: 0;
+	margin: 0;
+}
+.blocomin{
+	border: 1px solid white;
+	position: relative;
+	float: left;
+	width: 10%;
+	height: 100%;
+}
+
+
+.bloco{
+	position: relative;
+	float: left;
+	width: 18%;
+	height: 100%;
+	/* padding:10px; */
+	/* border: 0.5px solid yellow; */
+}
+.santander{
+	text-align: left;
+	/* border: 1px solid white; */
+}
+.barraStatus{
+	height: 25px;
+	width: 100%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.fase{
+	text-align: center;
+	position: relative;
+	float: left;
+	/* border: 2px solid blue;  */
+	height: 100%;
+	width: 25%;
+	background-color: #eaeced;
+	color: #b2b2b3;
+
+}
+
 
 .logos{
 	padding-top: 25px;
 	padding-bottom:25px;
 	text-align: center;
-	
 }
+
+
 .tituloCentral{
 	position: relative;
 	color: white;
@@ -489,6 +638,7 @@ textarea:-moz-placeholder { color:white; }​
 
 
 .boxQuestion{
+	max-width: 530px;
 	border-radius: 10px;
 	background-color: #f2f3f3;
 	padding-left: 30px;
@@ -496,8 +646,10 @@ textarea:-moz-placeholder { color:white; }​
 	width: 0 auto;
 	position: relative;
 	display: inline-block;
-	height: 80px;
-	line-height: 80px;
+	min-height: 80px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	/* line-height: 80px; */
 }
 
 .pagefooter nav{padding:0; text-transform:uppercase;}
