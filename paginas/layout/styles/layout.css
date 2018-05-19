@@ -111,6 +111,7 @@ File: Layout CSS
 .centralizado{
 	padding-top: 30px;
 	text-align: center;
+	color: white;
 }
 
 .iniatendimento{
@@ -354,6 +355,7 @@ textarea:-moz-placeholder { color:white; }​
 }
 
 .button {
+	display: inline;
     background: #fff;
     border: none;
     color: #3ABBE8;;
@@ -364,10 +366,7 @@ textarea:-moz-placeholder { color:white; }​
     text-align: center;
     letter-spacing: 0.56px;
 	font-weight: 800;
-	margin-left: 40% !important;
-	margin-top: 60px !important;
     line-height: 16px;
-    font-family: "Nunito Sans";
     font-size: 12px;
     margin: 4px 2px;
     cursor: pointer;
