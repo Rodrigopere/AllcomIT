@@ -34,9 +34,10 @@
 
         if (firstElement!=undefined){
             createQuestion(firstElement, function (callback){
+
                 if (callback){
-                    alert("terminei de criar minha pergunta")
-                    alert(callback);
+                    alert("amem terminei de criar minha pergunta")
+                    // alert(callback);
 
                 }
             });
@@ -93,17 +94,21 @@
        
         var neto2 = document.createElement("div");
         $(neto2).addClass('boxQuestion');
-        
+        filho.appendChild(neto2);       
         //função com efeito de máquina de escrever
         // neto2.innerHTML=firstElement.question;
-        typingEffect(firstElement.question, neto2, function (callback){
+        return typingEffect(firstElement.question, neto2, function (callback){
             if(callback){
                 efeitoCarregamento(function (callback){
-                    return callback('OI true');
+                    alert("agora");
+                    return callback(true);
                 });
+                // return callback(true);
             }
+            
+            // return callback(true);
         });
-        filho.appendChild(neto2);        
+         
     }
 
 
@@ -127,8 +132,11 @@
         neto2.innerHTML=value;
         filho.appendChild(neto2);
         efeitoCarregamento(function (callback){
-            alert("aqui1");
-            alert(callback);
+            if(callback){
+                if(robo.length>0){
+                    pushQuestion();
+                }                
+            }           
         });
     }
 
@@ -166,8 +174,9 @@ function efeitoCarregamento(callback){
             if(repeticao>=4){
                 $(".efeito").remove();
                 // pushQuestion(); //chama próxima pergunta
+                
                 clearInterval(efeito); //para chamada de execução da pergunta
-                return callback('Ai sim');
+                return callback(true);
             }
         }, 600);
 }
@@ -179,7 +188,7 @@ function typingEffect (str, el, callback) {
     var typer = setInterval(function() {
       if (!char.length){
         clearInterval(typer);
-        return callback(true);
+        return callback('sim');
       }
       var next = char.pop();
       el.innerHTML += next;
