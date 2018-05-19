@@ -116,7 +116,8 @@ File: Layout CSS
 
 
 .fechar{
-    top: 16px;
+	cursor: pointer;
+	top: 10px;
     width: 50px;
     position: relative;
     font-size: 8pt;
@@ -140,7 +141,7 @@ File: Layout CSS
 	border: 1px solid white;
 }
 
-::-webkit-input-placeholder  { color:white; }
+::-hiddenkit-input-placeholder  { color:white; }
 input:-moz-placeholder { color:white}
 textarea:-moz-placeholder { color:white; }​
 
@@ -174,6 +175,9 @@ textarea:-moz-placeholder { color:white; }​
 	/* border: 2px solid #ec0000 !important; */
 }
 
+.modaltop{
+	display: none;
+}
 .carro{
 	color: #2d96da;
 	font-size: 8pt;
@@ -184,7 +188,6 @@ textarea:-moz-placeholder { color:white; }​
 .lablemin{
 	color: #2d96da;
 	font-size: 10pt;
-	/* font-weight: bold; */
 	display: table;
 }
 
@@ -195,7 +198,7 @@ textarea:-moz-placeholder { color:white; }​
 }
 
 .textMin{
-	padding-left: 35px;
+	padding-left: 27px;
     text-align: left;
 	color: white;
 	font-weight: bold;
@@ -207,17 +210,26 @@ textarea:-moz-placeholder { color:white; }​
 }
 
 .iconMin{
-	max-width: 10px;
-	margin-right: 10px;
+	max-width: 20px;
+	margin-right: 5px;
+}
+.iconMinClose{
+	max-width: 12px;
+	margin-right: 5px;
 }
 
 .iconMinACtion{
-	width: 17px;
+	/* width: 17px; */
 	cursor: pointer;
 }
 
 
 .dadosmin{
+
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
 	padding-top: 15px;
 	padding-left: 15px;
     max-width: 80%;
@@ -227,10 +239,18 @@ textarea:-moz-placeholder { color:white; }​
     top: 50%;
     width: 100%;
     text-align: center;
-    -webkit-transform: translateY( -50% );
+    -hiddenkit-transform: translateY( -50% );
     -moz-transform: translateY( -50% );
 	transform: translateY( -50% );
 	height: 100%;
+}
+.textoOu{
+	margin-left: -100%;	
+	top: 50%;	
+	/* border: 1px solid red; */
+	/* text-align: center; */
+	position: relative;		
+
 }
 
 .actionmin{
@@ -245,7 +265,7 @@ textarea:-moz-placeholder { color:white; }​
     top: 50%;
     width: 100%;
     text-align: center;
-    -webkit-transform: translateY( -50% );
+    -hiddenkit-transform: translateY( -50% );
     -moz-transform: translateY( -50% );
     transform: translateY( -50% );
 }
@@ -259,11 +279,39 @@ textarea:-moz-placeholder { color:white; }​
     left: 25%;
     width: 50%;
     text-align: center;
-    -webkit-transform: translateY( -50% );
+    -hiddenkit-transform: translateY( -50% );
     -moz-transform: translateY( -50% );
     transform: translateY( -50% );
 }
 
+.info{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/* margin-top: 2px; */
+	/* margin-bottom: 2px; */
+	padding-left: 30px;
+	position: relative;
+	float: left;
+	font-size: 8pt;
+	/* border: 0.5px solid red; */
+	width: 22%;
+	text-align: left;
+}
+
+
+.valueinfo{
+	font-weight: bold;
+	font-size: 8pt;
+	/* margin-top: 2px; */
+	/* margin-bottom: 2px; */
+	padding-left: 20px;
+	text-align: left;
+	position: relative;
+	float: left;
+	/* border: 0.5px solid black; */
+	width: 60%;
+}
 
 
 .divisoriaMin{
@@ -321,8 +369,8 @@ textarea:-moz-placeholder { color:white; }​
 	/* border: 2px solid red; */
 	padding-left: 100px;
 	padding-right: 100px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 	display: block;
 	color: #46484d;
 }
@@ -368,12 +416,32 @@ textarea:-moz-placeholder { color:white; }​
 	border-radius: 10px;
 	font-size: 8pt;
 	font-weight: bold;
-	border: 1px solid black;
+	/* border: 1px solid black; */
+	border: 1px solid #46484d;
+}
+
+.essa{
+	color: white;
+	border: none;
+	/* background-color: red; */
+	background-image: linear-gradient( to right, #0066a8 50%, #0e77bc);
 }
 
 .logoDigital{
-	padding-top: 20px;
+	width:200px;
+	padding-top: 15px;
 }
+
+.detailtop{
+	padding-left: 65px;
+	padding-right: 30px;
+	height: 10px;
+	text-align: center;
+	/* border: 0.5px solid red; */
+	background-image: linear-gradient( to right, #0066a8 50%, #0e77bc);
+}
+
+
 .logosmin{
 	padding-left: 65px;
 	padding-top: 5px;
@@ -386,11 +454,14 @@ textarea:-moz-placeholder { color:white; }​
 .autorizado{
 	position: relative;
 	width: 100%;
-	color: white;
+	color: #c0ddf0;
 	text-align: left;
 	font-size: 7pt;
 	padding: 0;
 	margin: 0;
+	margin-top: -5px;
+	/* border: 1px solid white; */
+	max-height: 20px;
 }
 .blocomin{
 	/* border: 1px solid white; */
@@ -409,11 +480,72 @@ textarea:-moz-placeholder { color:white; }​
 	/* padding:10px; */
 	/* border: 0.5px solid yellow; */
 }
+
+.bordainit{
+	background-color: #5ed5f2;
+	top:-7px;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 7px;
+}
+
+.titulodetailbloco{
+	position: relative;
+	z-index: 1;	
+	width: 100%;
+	font-weight: bold;
+	background-color: white;
+	color: #2290d8;
+	text-align: left;
+}
+
+
+.detailBloco{
+	position: relative;
+	z-index: 11;	
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	font-weight: bold;
+	background-color: white;
+	color: #2290d8;
+	text-align: left;
+	padding-left: 40px;
+	padding-right: 40px;
+	/* border: 0.5px solid blue; */
+}
+
+.fullline{
+	/* border: 0.5px solid pink; */
+	width: 100%;
+	display: inline-block;
+}
+.bodydetailBloco{
+	/* border: 0.5px solid blue; */
+	box-shadow: 0px 9px 11px -2px #0606064f;
+	position: relative;
+	z-index: 11;	
+	/* width: 140%; */
+	width: 400px;;
+	display: inline-block;
+	background-color: white;
+	color: black;
+	padding-bottom: 10px;
+}
+
+
+
+
 .santander{
+	/* width:200px; */
 	text-align: left;
 	/* border: 1px solid white; */
 }
 .barraStatus{
+	line-height: 25px;;
+	/* border: 1px solid red; */
+	background-color: #eaeced;
 	height: 25px;
 	width: 100%;
 	padding-left: 5%;
@@ -427,7 +559,7 @@ textarea:-moz-placeholder { color:white; }​
 	/* border: 2px solid blue;  */
 	height: 100%;
 	width: 25%;
-	background-color: #eaeced;
+	background-color: #dadcde;
 	color: #b2b2b3;
 
 }
@@ -458,6 +590,166 @@ textarea:-moz-placeholder { color:white; }​
 	margin-top: 30px;
     font-size: 22pt;
 	padding-top: 20px;
+}
+
+.quitacao{
+	margin-top: 50px;
+	padding-left:20%;
+	padding-right:10%;
+	height: 330px;
+}
+.faseaction{
+	color: white;
+	background: url('../../images/preenchimento.png');
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+
+.retanguloCentral{
+	border-radius: 10px;
+	float: left;
+	right: 0px;;
+	height: 100%;
+	/* border: 1px solid black; */
+	border: 1px solid #eaeced;
+	width: 75%;
+	max-width: 270px;
+}
+
+.text{
+	-hiddenkit-transfom: translateY( 50% );
+    -moz-transform: translateY( 50% );
+	transform: translateY( 50% );
+	font-weight: bold;
+	font-size: 14pt;
+	color: #383a40;
+}
+.titulonegociacao{
+	padding-left: 12%;
+    padding-right: 12%;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    margin-bottom: 14%;
+}
+
+.depreco{
+	display: inline-block;
+}
+
+.queroEssa{
+	cursor: pointer;
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+    width: 100%;
+    height: 18%;
+    text-align: center;
+}
+.preco{
+	/* border: 1px solid red; */
+	/* margin-top: 5%;
+	margin-bottom: 5%; */
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+
+.outrasopcoes{
+	/* border: 1px solid red; */
+	/* margin-top: 5%;
+	margin-bottom: 5%; */
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+
+
+
+.de{
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 8pt;
+	color:#383a40;
+	float: left;
+}
+
+.desconto{
+	padding-left: 14%;
+    padding-right: 14%;
+    font-size: 8pt;
+    color: #383a40;
+    /* float: left; */
+}
+
+.por{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	font-size: 8pt;
+	color:#2290d8;
+	float: left;
+}
+
+.valor{
+	text-decoration:line-through;
+	text-align: left;
+	font-weight: bold;
+	font-size: 13pt;
+	color: #383a40;
+	float: left;
+}
+
+.valorpor{
+	text-decoration:line-through;
+	text-align: left;
+	font-weight: bold;
+	font-size: 13pt;
+	color: #2290d8;
+	float: left;
+}
+
+
+
+.divisoriaNegociacao{
+	top: 50%;
+	width: 100%;
+	border-top: 1px solid #eaeced;
+	position: relative;
+	/* 	bottom: 0px; */
+}
+
+.nrIdent{
+	position: absolute;;
+	margin-left: -15px;
+	margin-top: -15px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50%;
+	background-color: #4ec9ed;
+	color: white;
+}
+
+.ou{
+	right: 0px;
+    height: 100%;
+    /* border: 1px solid green; */
+	width: 10%;
+    float: left;
+    line-height: 100%;
+}
+
+.optionQuitacao{
+	right: 0px;
+	border: 0px solid blue;
+	height: 100%;
+	width: 33.3333%;
+	float: left;
 }
 
 .PagamentoAgendado{
@@ -661,7 +953,7 @@ textarea:-moz-placeholder { color:white; }​
 
 #pagebody{
 	min-height: 500px;
-	margin-bottom: 300px;
+	margin-bottom: 150px;
 }
 
 #bodyDebitos{
