@@ -16,7 +16,6 @@
         var robonegociacao=[
              {question:'Você pode pagar à vista todo o valor do seu contrato ou somente as parcelas atrasadas. Em ambas opções você tem descontos incríveis.'}
             ,{question:'Escolha a melhor opção para você:'}
-            ,{question:'3º - Qual é o primeiro nome de sua mãe?'}
         ]   
         
     
@@ -29,16 +28,23 @@
         //pega próximo elemento da fila
         firstElement = robonegociacao.shift();
 
-        console.log("elementos");
-        console.log(firstElement);
+        // console.log("elementos");
+        // console.log(firstElement);
 
+        
         if (firstElement!=undefined){
             createQuestion(firstElement, function (callback){
-
+                console.log(callback);
+                // alert("acabou todos os efeitos");             
                 if (callback){
-                    alert("amem terminei de criar minha pergunta")
-                    // alert(callback);
-
+                    // alert("amem terminei de criar minha pergunta")
+                    if(robonegociacao.length>0){
+                        //se chama denovo
+                        negociacao();
+                    }
+                    else{
+                        alert("Testes finalizados");
+                    }
                 }
             });
             
@@ -97,18 +103,18 @@
         filho.appendChild(neto2);       
         //função com efeito de máquina de escrever
         // neto2.innerHTML=firstElement.question;
-        return typingEffect(firstElement.question, neto2, function (callback){
+        typingEffect(firstElement.question, neto2, function (callback){
+            // alert("Acabou efeito de máquina de escrever");
             if(callback){
                 efeitoCarregamento(function (callback){
-                    alert("agora");
+                    // alert("Acabou o efeio de 3 pontinhos...");
                     return callback(true);
                 });
-                // return callback(true);
+                    // return callback(true);
             }
             
             // return callback(true);
-        });
-         
+        });        
     }
 
 
@@ -174,7 +180,14 @@ function efeitoCarregamento(callback){
             if(repeticao>=4){
                 $(".efeito").remove();
                 // pushQuestion(); //chama próxima pergunta
-                
+                // alert("caio");
+                // alert(robonegociacao.length);
+
+                if(robonegociacao.length<3 && robonegociacao.length>0){
+                    // alert("fim")
+                    negociacao();
+                }
+
                 clearInterval(efeito); //para chamada de execução da pergunta
                 return callback(true);
             }
@@ -188,7 +201,7 @@ function typingEffect (str, el, callback) {
     var typer = setInterval(function() {
       if (!char.length){
         clearInterval(typer);
-        return callback('sim');
+        return callback(true);
       }
       var next = char.pop();
       el.innerHTML += next;
