@@ -207,6 +207,7 @@ textarea:-moz-placeholder { color:white; }​
 }
 
 .iconMin{
+	max-width: 12px;
 	margin-right: 10px;
 }
 
