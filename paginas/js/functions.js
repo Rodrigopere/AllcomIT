@@ -11,15 +11,11 @@
             answer: ['CARLA','SABRINA','MARIA','PAULA','CAROLINA']
         }
     ]   
-
-        //simulação de dados oriundos do servidor
-        var robonegociacao=[
-             {question:'Você pode pagar à vista todo o valor do seu contrato ou somente as parcelas atrasadas. Em ambas opções você tem descontos incríveis.'}
-            ,{question:'Escolha a melhor opção para você:'}
-        ]   
-        
+    var robonegociacao=[
+            {question:'Você pode pagar à vista todo o valor do seu contrato ou somente as parcelas atrasadas. Em ambas opções você tem descontos incríveis.'}
+        ,{question:'Escolha a melhor opção para você:'}
+    ]   
     
-
     //pega primeira pergunta e exibe na tela
     function negociacao(){
         //Esvazia opções anteriores de resposta
@@ -183,11 +179,14 @@ function efeitoCarregamento(callback){
                 // alert("caio");
                 // alert(robonegociacao.length);
 
-                if(robonegociacao.length<3 && robonegociacao.length>0){
+                if(robonegociacao.length<2 && robonegociacao.length>0){
                     // alert("fim")
                     negociacao();
                 }
-
+                //exibe proposta
+                else if(robonegociacao.length==0){
+                    // alert("exibe negociações possíveis");
+                }
                 clearInterval(efeito); //para chamada de execução da pergunta
                 return callback(true);
             }
@@ -209,6 +208,7 @@ function typingEffect (str, el, callback) {
   }
 
 
+<<<<<<< HEAD
 
 
   /*
@@ -234,3 +234,14 @@ function openModal (modal){
 function closeModal(modal){
     document.getElementById(modal).style.display="none";
 };
+=======
+  function openDetail(element){
+
+      var value = document.getElementById(element).style.display;
+      if (value =="block")
+        document.getElementById(element).style.display="none";
+        else{
+            document.getElementById(element).style.display="block";
+        }     
+  }
+>>>>>>> 6b07c2e7080cdb0529ed6786a4e1759b5d2dc75a
