@@ -207,10 +207,6 @@ function typingEffect (str, el, callback) {
     }, 30);
   }
 
-
-<<<<<<< HEAD
-
-
   /*
 ===============================================================
 
@@ -234,7 +230,7 @@ function openModal (modal){
 function closeModal(modal){
     document.getElementById(modal).style.display="none";
 };
-=======
+
   function openDetail(element){
 
       var value = document.getElementById(element).style.display;
@@ -244,4 +240,3 @@ function closeModal(modal){
             document.getElementById(element).style.display="block";
         }     
   }
->>>>>>> 6b07c2e7080cdb0529ed6786a4e1759b5d2dc75a
