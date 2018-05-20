@@ -59,6 +59,18 @@ File: Layout CSS
 	border: 10px solid rgb(83,142,181);
 }
 
+
+.agendamento{
+	text-align: center;
+	padding-top: 5%;
+	margin-top: 120px;
+	/* border: 1px solid red; */
+}
+
+.imgCalendario{
+	margin-left: 3%;
+}
+
 .fone{
 	font-size: 18pt;
 	font-weight: bold;
@@ -128,15 +140,28 @@ File: Layout CSS
     border: 1px solid #439cd7;
 }
 
+.confirma{
+	background-color: white;
+	color: #3abbe8 !important;
+	margin-right: 60px;
+	/* padding-left: 50px !important;
+	padding-right: 50px !important; */
+}
 
 .iniatendimento{
 	margin-top: 20px;
 	width: 150px;
-	font-size: 10pt;
+	font-size: 9pt;
 	color: white;
 	font-weight: bold;
-	padding: 20px;
-	line-height: 50px;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	
+	padding-left: 50px;
+	padding-right: 50px;
+
+	/* line-height: 50px; */
+	cursor: pointer;
 	border-radius: 5px;
 	border: 1px solid white;
 }
@@ -758,19 +783,28 @@ textarea:-moz-placeholder { color:white; }​
 	text-align: center;
 	font-weight: bold;
 	margin-top: 30px;
-	font-size: 40px;
-	font-family: Avenir Next LT Pro;
+	font-size: 36px;
+	padding-top: 20px;
+}
+
+
+.botaoConfirmacao{
+	position: relative;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-bottom: 200px;
+	font-size: 36px;
 	padding-top: 20px;
 }
 
 .ConfirmeDados {		
 	color: #FFFFFF;	
-	font-family: "Nunito Sans";	
 	font-size: 20px;	
-	font-weight: 300;	
 	margin-top: 34px;
-	letter-spacing: 1.11px;	
-	line-height: 27px;	
+	line-height: 27px;
+	font-weight: normal;	
 	text-align: center;
 }
 
@@ -778,9 +812,7 @@ textarea:-moz-placeholder { color:white; }​
 	position: relative;
 	color: white;
 	text-align: center;
-	/* font-weight: bold; */
 	margin-top: 10px;
-    /* font-size: 20pt; */
 	padding-top: 20px;
 }
 
@@ -790,7 +822,7 @@ textarea:-moz-placeholder { color:white; }​
 	text-align: center;
 	margin-top: 10px;
 	padding-top: 20px;
-	font-family: "Nunito Sans";
+	/* font-family: "Nunito Sans"; */
 	font-size: 13px;
 	font-weight: 600;
 	letter-spacing: -0.26px;
@@ -840,7 +872,7 @@ textarea:-moz-placeholder { color:white; }​
 .tituloCentralConcluido {
     line-height: 50pt;
     position: relative;
-    font-family: Avenir Next LT Pro;
+    /* font-family: Avenir Next LT Pro; */
     color: white;
     text-align: center;
     font-weight: 600;
@@ -853,13 +885,27 @@ textarea:-moz-placeholder { color:white; }​
 
 .ficamos-felizes {		
 	color: #FFFFFF;	
-	font-family: "Nunito Sans";	
+	/* font-family: "Nunito Sans";	 */
 	font-size: 20px;	
 	font-weight: 300;	
 	letter-spacing: 1.11px;	
 	line-height: 27px;	
 	text-align: center;
 }
+.pagefooterMin{
+	height: 165px;
+	line-height: 150px;
+	
+	width: 100%;
+	background-color: #3abbe8;
+	position: fixed;
+	bottom: 0px;
+}
+
+/* -hiddenkit-transform: translateY( -50% );
+    -moz-transform: translateY( -50% );
+	transform: translateY( -50% );
+ */
 
 .pagefooter{
 	height: 215px;
@@ -914,15 +960,25 @@ textarea:-moz-placeholder { color:white; }​
 	position: relative;
 	float: right;
 }
+.textnormal{
+	float: left;
+}
+.enfase{
+	font-weight: bold;
+	color: #e8e8e8;
+	display: inline-block
+}
 
-
+.botoes{
+	text-align: center;
+}
 
 .boxAnswer{
 	background-color: #383a40;
 	padding-left: 30px;
 	padding-right: 30px;
 	width: 0 auto;
-	color: white;
+	color: #cacbcd;
 	position: relative;
 	display: inline-block;
 	height: 80px;
@@ -944,6 +1000,11 @@ textarea:-moz-placeholder { color:white; }​
 	padding-top: 30px;
 	padding-bottom: 30px;
 	/* line-height: 80px; */
+}
+
+.emoji{
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .pagefooter nav{padding:0; text-transform:uppercase;}
@@ -971,8 +1032,9 @@ textarea:-moz-placeholder { color:white; }​
 }
 
 .m, .nd{
-	margin-left: 50px;
-	margin-right: 50px;
+	width: 50px;
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 .right{
