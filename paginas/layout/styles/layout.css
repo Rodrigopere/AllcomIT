@@ -1527,7 +1527,7 @@ table a, #comments a{background-color:inherit;}
 
 .modal-body {
   background: #FFF;
-  border-top:10px solid #23ADDC;
+  border-top:10px solid #16A4D6;
   padding: 60px 100px;
   width: 74%;
   margin-left: 13%;
@@ -1627,13 +1627,36 @@ body-modal {
   transition: ease .2s;
 }
 
-button {
+
+.button1 {
   border: 1px solid #333333;
   outline: none;
   color: #333333;
+  margin-top: 60px;
+  border-radius: 5px;
+  width: 44%;
+  padding: 17px 42px;
+  font-size: 0.9em;
+  font-weight: bold;
 }
+
+.button2 {
+	outline: none;
+	color: #FFF;
+	margin-top: 60px;
+	border-radius: 5px;
+	padding: 17px 43px;
+	width: 44%;
+	font-size: 0.9em;
+	font-weight: bold;
+	background: linear-gradient(to right, #FF9600 , #FFCC40);
+  }
+
+
 
 .modal-trigger:hover {
   padding: 20px 60px;
 }
+
+
 /*MODAL-FINAL*/
