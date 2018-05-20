@@ -8,13 +8,14 @@
 <script src="js/functions.js" type="text/javascript"></script>
 <script src="js/jquery-1.2.6.pack.js" type="text/javascript"></script>
 <script src="js/jquery.maskedinput-1.1.4.pack.js" type="text/javascript"></script>
-<script>$(document).ready(function(){
-    $("#cpf").mask("999.999.999-99");
-            console.log($("#cpf"));
-})</script>
+<script>
+    $(document).ready(function(){
+        $("#cpf").mask("999.999.999-99");
+    })
+</script>
 
 </head>
-<body id="top" onload="">
+<body id="top">
 <div class="hocclear"> 
         <img class="fundo" src="images/Imagem_mulher.png" alt="">  
     <div class="wrapper row logos">
@@ -39,14 +40,15 @@
 </div>
 
 <div class="wrapper row tituloCentraldebito">
-    <!-- <input type="text"class="cpf"> -->
     <input  id="cpf" class="cpf" name="cpf" type="text" placeholder="|     .     .     /    "/>
     <div class="validate">v</div> <!--TEM GAMBIARRA-->
 </div>
 
 
-<div class="wrapper row centralizado">
-    <buttom class="iniatendimento">INICIAR ATENDIMENTO</buttom>
+<div class="wrapper row" style="text-align: center">
+    <div class="centralizado">
+        <div class="iniatendimento">INICIAR ATENDIMENTO</div>
+    </div>
 </div>
 </body>
 </html>

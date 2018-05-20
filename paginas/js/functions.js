@@ -207,35 +207,19 @@ function typingEffect (str, el, callback) {
     }, 30);
   }
 
-  /*
-===============================================================
-
-Hi! Welcome to my little playground!
-
-My name is Tobias Bogliolo. 'Open source' by default and always 'responsive',
-I'm a publicist, visual designer and frontend developer based in Barcelona. 
-
-Here you will find some of my personal experiments. Sometimes usefull,
-sometimes simply for fun. You are free to use them for whatever you want 
-but I would appreciate an attribution from my work. I hope you enjoy it.
-
-===============================================================
-*/
-
 function openModal (modal){
     document.getElementById(modal).style.display="block";
 }
-
 
 function closeModal(modal){
     document.getElementById(modal).style.display="none";
 };
 
-  function openDetail(element){
+function openDetail(element){
 
       var value = document.getElementById(element).style.display;
       if (value =="block")
-        document.getElementById(element).style.display="none";
+        dument.getElementById(element).style.display="none";
         else{
             document.getElementById(element).style.display="block";
         }     
