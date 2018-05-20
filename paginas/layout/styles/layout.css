@@ -178,7 +178,7 @@ File: Layout CSS
 	line-height: 15px;;
 	text-align: left;
 	font-weight: normal;
-	font-size: 7pt;
+	font-size: 9pt;
 	color: white;
 }
 
@@ -234,8 +234,8 @@ File: Layout CSS
 
 .iniatendimento{
 	text-align: center;
-	margin-left: 80px;
-	margin-right: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
 	font-size: 9pt;
 	color: white;
 	font-weight: bold;
@@ -1013,6 +1013,18 @@ textarea:-moz-placeholder { color:white; }​
 	line-height: 27px;	
 	text-align: center;
 }
+
+.pagefooterMax{
+	border: 1px solid white;
+	height: 280px;
+	line-height: 210px;
+	width: 100%;
+	background-color: #3abbe8;
+	position: fixed;
+	bottom: 0px;
+}
+
+
 .pagefooterMin{
 	height: 165px;
 	line-height: 210px;
@@ -1620,10 +1632,10 @@ table a, #comments a{background-color:inherit;}
 }
 
 /* Aditional Styles */
-* {
+/* * {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-}
+} */
 
 p-modal {
   line-height: 1.4em;

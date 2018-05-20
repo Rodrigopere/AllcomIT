@@ -6,15 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 <script src="js/functions.js" type="text/javascript"></script>
-<script src="js/jquery-1.2.6.pack.js" type="text/javascript"></script>
-<script src="js/jquery.maskedinput-1.1.4.pack.js" type="text/javascript"></script>
-<script>
-    $(document).ready(function(){
-        // $("#fone").mask("999.999.999-99");
-        // nao funcionou mascara de telefone
-    })
-</script>
-
 </head>
 <body id="top">
     <div id="pageintro" class="hocclear"> 
@@ -47,7 +38,7 @@
                     <div class="dadosmin">
                             <div class="lablemin">
                                 <img class="iconMin" src="images/icon-2.png" alt="">                                  NEGOCIAÇÃO</div>
-                            <div class="textMin">...</div>
+                            <div class="textMin">À vista c/ 30%</div>
                         </div>
                         <div class="actionmin">
                             <img class="iconMinACtion iconMin" src="images/accept.png" onclick="openDetail('modal3')" alt="">
@@ -205,53 +196,48 @@
 
 <!-- DIV ONDE ENTRARÃO DINAMICAMENTE AS PERGUNTAS -->
     <div id="pagebodyConfirmacao"class="hocclear">
-             <div class="fase2Confirmacao row"   >
+       
+            <div class="fase2Confirmacao row"   >
                     <div class="nd">
                         <img src="images/ND.png">
                     </div>
-                    <div class="boxQuestion">Seu número de celular continua sendo <strong>(11) 9999-0909</strong>?
+                    <div class="boxQuestion">
+                            Seu endereço continua sendo:<br>
+                            <strong>Av. Tununaré, 550 - 3º andar - Tamboré, Barueri - SP - CEP 06460-020</strong>?<br>
+                            OBS: É para este endereço que enviaremos os boletos para pagamento das parcelas.
                 </div>
             </div>  
-
 
             <div class="answer row">
                     <div class="m">
                         <img src="images/m.png">
                     </div>
                     <div class="boxAnswer">
-                            NÃO, meu celular mudou.
+                        NÃO, meu endereço mudou.
                     </div>
-                </div>
-
+            </div>
 
             <div class="fase2Confirmacao row"   >
                     <div class="nd">
                         <img src="images/ND.png">
                     </div>
-                    <div class="boxQuestion">Por favor nos informe seu novo <strong>número de celular:</strong>
+                    <div class="boxQuestion">
+                            Informe <strong>seu novo endereço:</strong>
                 </div>
             </div>  
+
     </div>
 
 
     
 
-    <div id="" class="pagefooterMin"> 
+    <div id="" class="pagefooterMax"> 
             <nav class=""> 
               <ul id="answer_robo"class="center">
                     <div class="wrapper row">
                         <div class="botoes">
                             <div class="ag">
- 
-                                <div class="atendimentoInput">
-                                    <div class="tx">Informe seu celular com DDD*</div>
-                                    <div class="ip">
-                                            <input id="fone" class="insertInput" name="fone" type="text" value="(11) 9992-9902" placeholder="|"/>
-                                    </div>
-                                </div>
-                                    
-                                <div class="iniatendimento confirma">SALVAR NOVO CELULAR</div>
-                                <!-- <div class="iniatendimento">NÃO, MEU NUMERO MUDOU</div> -->
+                                <div class="iniatendimento confirma">ATUALIZAR</div>
                             </div>
                         </div>
                     </div>
