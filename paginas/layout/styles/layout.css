@@ -166,6 +166,23 @@ File: Layout CSS
 	/* min-width: 250px !important; */
 }
 
+.atendimentoInput{
+	margin-left: 80px;
+	margin-right: 80px;
+	font-size: 9pt;
+	color: white;
+	font-weight: bold;
+	width: 250px;
+	cursor: pointer;
+	border-radius: 5px;
+	border: 1px solid white;
+	display: block;
+	float: left;
+	height: 55px;
+    line-height: 55px;
+}
+
+
 .iniatendimento{
 	margin-left: 80px;
 	margin-right: 80px;
