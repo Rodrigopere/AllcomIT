@@ -144,8 +144,7 @@ File: Layout CSS
 	background-color: white;
 	color: #3abbe8 !important;
 	margin-right: 60px;
-	/* padding-left: 50px !important;
-	padding-right: 50px !important; */
+	min-width: 150px !important;
 }
 
 .iniatendimento{
@@ -453,7 +452,7 @@ textarea:-moz-placeholder { color:white; }​
 }
 
 .logoDigital{
-	width:200px;
+	max-width:200px;
 	padding-top: 15px;
 }
 
@@ -563,7 +562,7 @@ textarea:-moz-placeholder { color:white; }​
 
 
 .santander{
-	/* width:200px; */
+	max-width:200px;
 	text-align: left;
 	/* border: 1px solid white; */
 }
