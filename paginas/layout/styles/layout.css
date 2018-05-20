@@ -1481,3 +1481,159 @@ table a, #comments a{background-color:inherit;}
 	#pageintro li article{max-width:none; width:100%;}
 	#pageintro li .heading{font-size:2rem;}
 }
+
+
+/*MODAL-INICIO*/
+.modal,
+.modal-box {
+  z-index: 900;
+}
+
+.modal-sandbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,.8);
+  overflow: auto;
+}
+
+.modal-box {
+  position: relative;
+  width: 80%;
+  max-width: 920px;
+  margin: 100px auto;
+  animation-name: modalbox;
+  animation-duration: .3s;
+  animation-timing-function: ease-out;
+}
+
+.modal-header {
+  padding: 0px 90px;
+  color: #ffffff;
+}
+
+.modal-body {
+  background: #FFF;
+  border-top:10px solid #23ADDC;
+  padding: 60px 100px;
+  width: 74%;
+  margin-left: 13%;
+  border-radius: 9px;
+}
+
+.tituloModal {
+    line-height: 50pt;
+    position: relative;
+    color: #000000;
+    text-align: left;
+    font-weight: bold;
+    font-size: 30pt;
+}
+
+/* Close Button */
+.close-modal {
+  text-align: right;
+  cursor: pointer;
+  background: url('../images/ícone fechar.png')no-repeat;
+}
+
+/* Animation */
+@-webkit-keyframes modalbox {
+  0% {
+    top: -250px; 
+    opacity: 0;
+  }
+  100% {
+    top: 0; 
+    opacity: 1;
+  }
+}
+
+@keyframes modalbox {
+  0% {
+    top: -250px; 
+    opacity: 0;
+  }
+  100% {
+    top: 0; 
+    opacity: 1;
+  }
+}
+
+/* Aditional Styles */
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+p-modal {
+  line-height: 1.4em;
+  color: black;
+  font-size: 16px;
+}
+
+p-doc {
+	line-height: 1.4em;
+	color: black;
+	font-size: 16px;
+	padding: 12px;
+  }
+
+  .ModalDoc {
+    line-height: 34pt;
+    position: relative;
+    color: #000000;
+    text-align: left;
+    font-weight: bold;
+    font-size: 19pt;
+}
+
+body-modal {
+  background: #FFF;
+}
+
+.modal-trigger, button {
+  top: 50%;
+  left: 50%;
+  padding: 20px 40px;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+}
+
+.modal-trigger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: black;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: ease .2s;
+}
+
+button {
+  border: 1px solid #333333;
+  outline: none;
+  color: #333333;
+}
+
+.modal-trigger:hover {
+  padding: 20px 60px;
+}
+/*MODAL-FINAL*/
