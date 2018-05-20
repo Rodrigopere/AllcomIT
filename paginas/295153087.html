@@ -38,7 +38,7 @@
                     <div class="dadosmin">
                             <div class="lablemin">
                                 <img class="iconMin" src="images/icon-2.png" alt="">                                  NEGOCIAÇÃO</div>
-                            <div class="textMin">À vista c/ 30%</div>
+                            <div class="textMin">...</div>
                         </div>
                         <div class="actionmin">
                             <img class="iconMinACtion iconMin" src="images/accept.png" onclick="openDetail('modal3')" alt="">
@@ -186,7 +186,7 @@
         <div class="wrapper row">
             <div class="barraStatus">
                 <div class="fase faseaction">1.NEGOCIE SEU DÉBITO</div>
-                <div class="fase">2.ATUALIZE SEUS DADOS</div>
+                <div class="fase faseaction">2.ATUALIZE SEUS DADOS</div>
                 <div class="fase">3.ENVIE SEUS DOCUMENTOS</div>
                 <div class="fase">4.CONFIRME A NEGOCIAÇÃO</div>
             </div>
@@ -195,32 +195,34 @@
 
 
 <!-- DIV ONDE ENTRARÃO DINAMICAMENTE AS PERGUNTAS -->
-    <div id="pagebody" class="hocclear">
+    <div id="pagebodyConfirmacao"class="hocclear">
+            <div class="xo">
+                <div class="labelEtapa etapa">2ª ETAPA</div>
+                <div class="labeldiv"></div>
+                <div class="labelEtapa">ATUALIZE SEUS DADOS</div>
+            </div>
+
+            <div class="fase2Confirmacao row"   >
+                <div class="nd">
+                    <img src="images/ND.png">
+                </div>
+                <div class="boxQuestion">Seu e-mail continua sendo
+                    <div class="mail">melissa@provedor.com.br</div>?
+                </div>
+            </div>  
+
             <div class="answer row">
-                <div class="m">
-                    <img src="images/m.png">
-                </div>
-                <div class="boxAnswer">
-                    Quero quitar o meu contrato por <div class="enfase">R$ 2.730,00</div>, com <div class="enfase">30% de desconto</div>
-                </div>
-            </div>
-
-
-            <div class="question row">
-                    <div class="nd"><img src="images/ND.png"></div>
-                    <div class="boxQuestion">Ótimo, boa escolha
-                        <img class="emoji" src="images/EMOJI FELIZ.png">
+                    <div class="m">
+                        <img src="images/m.png">
                     </div>
-
+                    <div class="boxAnswer">
+                        Sim, meu e-mail meu email continua melissa@provedor.com.br
+                    </div>
                 </div>
-            
-            <div class="question row">
-                <div class="nd"><img src="images/ND.png"></div>
-                <div class="boxQuestion">Podemos agendar o pagamento para o dia <strong>04 de junho</strong>, na próxima segunda-feira?</div>
-            </div>
     </div>
 
 
+    
 
     <div id="" class="pagefooterMin"> 
             <nav class=""> 
@@ -228,8 +230,8 @@
                     <div class="wrapper row">
                         <div class="botoes">
                             <div class="ag">
-                                <div class="iniatendimento confirma">SIM, PODE AGENDAR</div>
-                                <div class="iniatendimento">NÃO, QUERO AGENDAR</div>
+                                <div class="iniatendimento confirma">SIM</div>
+                                <div class="iniatendimento">NÃO, MEU E-MAIL MUDOU</div>
                             </div>
                         </div>
                     </div>

@@ -463,8 +463,8 @@ textarea:-moz-placeholder { color:white; }​
 
 .answer{
 	/* border: 2px solid blue; */
-	padding-left: 100px;
-	padding-right: 100px;
+	/* padding-left: 100px; */
+	/* padding-right: 100px; */
 	margin-top: 20px;
 	margin-bottom: 20px;
 	display: block;
@@ -1079,7 +1079,7 @@ textarea:-moz-placeholder { color:white; }​
 
 
 #pagebody{
-	border: 0.5px solid red;
+	/* border: 0.5px solid red; */
 	min-height: 500px;
 	margin-bottom: 150px;
 }
@@ -1100,7 +1100,7 @@ textarea:-moz-placeholder { color:white; }​
 
 .m, .nd{
 	width: 50px;
-	/* margin-left: 40px; */
+	margin-left: 40px;
 	margin-right: 40px;
 }
 

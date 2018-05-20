@@ -38,7 +38,7 @@
                     <div class="dadosmin">
                             <div class="lablemin">
                                 <img class="iconMin" src="images/icon-2.png" alt="">                                  NEGOCIAÇÃO</div>
-                            <div class="textMin">À vista c/ 30%</div>
+                            <div class="textMin">...</div>
                         </div>
                         <div class="actionmin">
                             <img class="iconMinACtion iconMin" src="images/accept.png" onclick="openDetail('modal3')" alt="">
@@ -186,7 +186,7 @@
         <div class="wrapper row">
             <div class="barraStatus">
                 <div class="fase faseaction">1.NEGOCIE SEU DÉBITO</div>
-                <div class="fase">2.ATUALIZE SEUS DADOS</div>
+                <div class="fase faseaction">2.ATUALIZE SEUS DADOS</div>
                 <div class="fase">3.ENVIE SEUS DOCUMENTOS</div>
                 <div class="fase">4.CONFIRME A NEGOCIAÇÃO</div>
             </div>
@@ -195,32 +195,38 @@
 
 
 <!-- DIV ONDE ENTRARÃO DINAMICAMENTE AS PERGUNTAS -->
-    <div id="pagebody" class="hocclear">
-            <div class="answer row">
-                <div class="m">
-                    <img src="images/m.png">
+    <div id="pagebodyConfirmacao"class="hocclear">
+            <div class="fase2Confirmacao row"   >
+                <div class="nd">
+                    <img src="images/ND.png">
                 </div>
-                <div class="boxAnswer">
-                    Quero quitar o meu contrato por <div class="enfase">R$ 2.730,00</div>, com <div class="enfase">30% de desconto</div>
+                <div class="boxQuestion">Obrigado por confirmar seu e-mail.
+                    <img class="emoji" src="images/EMOJI FELIZ Copy 2.png">
                 </div>
             </div>
 
 
-            <div class="question row">
-                    <div class="nd"><img src="images/ND.png"></div>
-                    <div class="boxQuestion">Ótimo, boa escolha
-                        <img class="emoji" src="images/EMOJI FELIZ.png">
+            <div class="fase2Confirmacao row"   >
+                    <div class="nd">
+                        <img src="images/ND.png">
                     </div>
-
+                    <div class="boxQuestion">Seu número de celular continua sendo <strong>(11) 9999-0909</strong>?
                 </div>
-            
-            <div class="question row">
-                <div class="nd"><img src="images/ND.png"></div>
-                <div class="boxQuestion">Podemos agendar o pagamento para o dia <strong>04 de junho</strong>, na próxima segunda-feira?</div>
-            </div>
+            </div>  
+
+            <div class="answer row">
+                    <div class="m">
+                        <img src="images/m.png">
+                    </div>
+                    <div class="boxAnswer">
+                        Sim, meu número continua sendo o mesmo.
+                    </div>
+                </div>
+
     </div>
 
 
+    
 
     <div id="" class="pagefooterMin"> 
             <nav class=""> 
@@ -228,8 +234,8 @@
                     <div class="wrapper row">
                         <div class="botoes">
                             <div class="ag">
-                                <div class="iniatendimento confirma">SIM, PODE AGENDAR</div>
-                                <div class="iniatendimento">NÃO, QUERO AGENDAR</div>
+                                <div class="iniatendimento confirma">SIM</div>
+                                <div class="iniatendimento">NÃO, MEU NUMERO MUDOU</div>
                             </div>
                         </div>
                     </div>
