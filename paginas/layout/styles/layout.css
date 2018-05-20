@@ -46,6 +46,24 @@ File: Layout CSS
 	background-color: #0668a7;
 }
 
+
+.carregamentoTop{
+	border-top: 10px solid #10e2e6 !important;
+}
+
+.carregamentoright{
+	border-right: 10px solid #10e2e6 !important;	
+}
+
+.carregamentoBottom{
+	border-bottom: 10px solid #10e2e6 !important;	
+}
+
+.caregamentoleft{
+	border-left: 10px solid #10e2e6 !important;	
+}
+
+
 .ciruloCarregamento{
 	left: 50%;
 	margin-left: -50px;
@@ -72,7 +90,8 @@ File: Layout CSS
 }
 
 .fone{
-	font-size: 18pt;
+	font-size: 1
+	8pt;
 	font-weight: bold;
 }
 
@@ -143,26 +162,24 @@ File: Layout CSS
 .confirma{
 	background-color: white;
 	color: #3abbe8 !important;
-	margin-right: 60px;
-	min-width: 150px !important;
+	/* margin-right: 100px; */
+	/* min-width: 250px !important; */
 }
 
 .iniatendimento{
-	margin-top: 20px;
-	width: 150px;
+	margin-left: 80px;
+	margin-right: 80px;
 	font-size: 9pt;
 	color: white;
 	font-weight: bold;
-	padding-top: 17px;
-	padding-bottom: 17px;
-	
-	padding-left: 50px;
-	padding-right: 50px;
-
-	/* line-height: 50px; */
+	width: 250px;
 	cursor: pointer;
 	border-radius: 5px;
 	border: 1px solid white;
+	display: block;
+	float: left;
+	height: 55px;
+    line-height: 55px;
 }
 
 ::-hiddenkit-input-placeholder  { color:white; }
@@ -387,6 +404,45 @@ textarea:-moz-placeholder { color:white; }​
 	border-bottom-right-radius: 10px;
 }
 
+#pagebodyConfirmacao{
+	min-height: 500px;
+	margin-bottom: 150px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.xo{
+	overflow: hidden;
+}
+
+
+.labeldiv{
+	width: 100%;
+	border-top: 1.5px solid #dbdddf;
+	margin-left: 200px;
+}
+.etapa{
+	color: #dbdddf !important;
+}
+.labelEtapa{
+	font-size: 11pt;
+	line-height: 15px;
+	font-weight: bold;
+	background-color: white;
+	color: #383a40;
+	position: relative;
+}
+
+.fase2Confirmacao{
+		/* border: 0.5px solid blue; */
+		/* border: 2px solid red; */
+		/* padding-left: 30px; */
+		/* padding-right: 30px; */
+		margin-top: 40px;
+		margin-bottom: 40px;
+		display: block;
+		color: #46484d;
+}
 
 
 .question{
@@ -457,6 +513,7 @@ textarea:-moz-placeholder { color:white; }​
 }
 
 .detailtop{
+	/* padding-top: 10px; */
 	padding-left: 65px;
 	padding-right: 30px;
 	height: 10px;
@@ -470,7 +527,7 @@ textarea:-moz-placeholder { color:white; }​
 	padding-left: 65px;
 	padding-top: 5px;
 	padding-right: 30px;
-	height: 80px;
+	height: 75px;
 	text-align: center;
 }
 
@@ -574,6 +631,7 @@ textarea:-moz-placeholder { color:white; }​
 	width: 100%;
 	padding-left: 5%;
 	padding-right: 5%;
+	margin-bottom: 30px;
 }
 
 .fase{
@@ -864,7 +922,8 @@ textarea:-moz-placeholder { color:white; }​
 	text-align: center;
 	font-weight: bold;
 	margin-top: 30px;
-    font-size: 40pt;
+	/* font-size: 40pt; */
+	font-size: 30pt;
     margin-bottom: 20px;
 }
 
@@ -893,18 +952,12 @@ textarea:-moz-placeholder { color:white; }​
 }
 .pagefooterMin{
 	height: 165px;
-	line-height: 150px;
-	
+	line-height: 210px;
 	width: 100%;
 	background-color: #3abbe8;
 	position: fixed;
 	bottom: 0px;
 }
-
-/* -hiddenkit-transform: translateY( -50% );
-    -moz-transform: translateY( -50% );
-	transform: translateY( -50% );
- */
 
 .pagefooter{
 	height: 215px;
@@ -962,10 +1015,23 @@ textarea:-moz-placeholder { color:white; }​
 .textnormal{
 	float: left;
 }
+
+.mail{
+	font-weight: bold;
+	color: #2290d8;
+	display: inline-block
+}
+
+
 .enfase{
 	font-weight: bold;
 	color: #e8e8e8;
 	display: inline-block
+}
+.ag{
+	position: relative;
+	display: inline-block;
+	/* border: 2px solid blue; */
 }
 
 .botoes{
@@ -987,7 +1053,7 @@ textarea:-moz-placeholder { color:white; }​
 
 
 .boxQuestion{
-	max-width: 530px;
+	max-width: 700px;
 	border-radius: 10px;
 	background-color: #f2f3f3;
 	padding-left: 30px;
@@ -1011,7 +1077,9 @@ textarea:-moz-placeholder { color:white; }​
 .pagefooter ul li::after{margin-left:10px;}
 .pagefooter ul li:last-child::after{margin-left:0;}
 
+
 #pagebody{
+	border: 0.5px solid red;
 	min-height: 500px;
 	margin-bottom: 150px;
 }
@@ -1032,7 +1100,7 @@ textarea:-moz-placeholder { color:white; }​
 
 .m, .nd{
 	width: 50px;
-	margin-left: 40px;
+	/* margin-left: 40px; */
 	margin-right: 40px;
 }
 
