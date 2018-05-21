@@ -75,33 +75,51 @@
 			<p2>A forma mais fácil e prática de renegociar os seus débitos.</p2>
 		</div>
 
-
-		<div class="codigo">
-			<span class="codigo-titulo">Insira o código que enviamos</span>
-			<div  class="codigo-valido">
-				<img id="validImg" class="codigo-valido-img" src="images/fill-28.png"></img>
-			</div>
-		</div>
-		<input class="date-style" id="firstField" onchange="textChanged('firstField', 0)" type="text" name="dia" size="4" maxlength="2"
-		 value="">
-		<input class="date-style" id="secondField" onchange="textChanged('secondField', 1)" type="text" name="mes" size="4" maxlength="2"
-		 value="">
-		<input class="date-style" id="thirdField" onchange="textChanged('thirdField', 2)" type="text" name="ano" size="4" maxlength="2"
-		 value="">
-		<input class="date-style" id="fourthField" onchange="textChanged('fourthField', 3)" type="text" name="ano" size="4" maxlength="2"
-		 value="">
-
 		<div class="space"></div>
-		<div class="w3-panel">
-			<!--style="width:30%"-->
-			<!-- <div class="w3-panel-emptyside"></div> -->
-			<button class="button0 w3-panel-content" onclick="confirmCode()">CONFIRMAR CÓDIGO</button>
-			<!-- <div class="w3-panel-emptyside"></div> -->
+
+		<div class="codigo-container">
+			<div class="codigo-empty-left"></div>
+			<div class="codigo-content-middle">
+				<div class="codigo-content">
+					<div class="codigo-field-left"></div>
+					<div class="codigo-field-center">
+						<div class="codigo-header">
+							<div class="codigo-titulo-container">
+								<span class="codigo-titulo">Insira o código que enviamos</span>
+							</div>
+							<div class="codigo-valido">
+								<img class="codigo-valido-img" id="validImg" src="images/fill-28.png"></img>
+							</div>
+						</div>
+						<div class="codigo-inputs">
+							<input class="date-style" id="firstField" onchange="textChanged('firstField', 0)" type="text" name="dia" size="4" maxlength="2"
+							 value="">
+							<input class="date-style" id="secondField" onchange="textChanged('secondField', 1)" type="text" name="mes" size="4" maxlength="2"
+							 value="">
+							<input class="date-style" id="thirdField" onchange="textChanged('thirdField', 2)" type="text" name="ano" size="4" maxlength="2"
+							 value="">
+							<input class="date-style" id="fourthField" onchange="textChanged('fourthField', 3)" type="text" name="ano" size="4" maxlength="2"
+							 value="">
+						</div>
+						<div class="w3-panel-space"></div>
+						<div class="w3-panel">
+							<!--style="width:30%"-->
+							<!-- <div class="w3-panel-emptyside"></div> -->
+							<button class="button0 w3-panel-content" onclick="confirmCode()">CONFIRMAR CÓDIGO</button>
+							<!-- <div class="w3-panel-emptyside"></div> -->
+						</div>
+						<!--<a href="#" class="logo-negocie-digital"><img src="images/Logo.png" alt=" "></a>-->
+						<a href="#" class="sem-codigo">
+							Não tenho um código
+						</a>
+					</div>
+					<div class="codigo-field-right"></div>
+				</div>
+			</div>
+			<div class="codigo-empty-right"></div>
 		</div>
-		<!--<a href="#" class="logo-negocie-digital"><img src="images/Logo.png" alt=" "></a>-->
-		<a href="#" class="sem-codigo">
-			Não tenho um código
-		</a>
+
+
 	</div>
 
 
