@@ -75,6 +75,7 @@ function getInputCode() {
     return code;
 }
 
+
 function confirmCode() {
     var code = getInputCode();
     /*Executar validação do código aqui*/
