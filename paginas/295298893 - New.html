@@ -38,7 +38,7 @@
                     <div class="dadosmin">
                             <div class="lablemin">
                                 <img class="iconMin" src="images/icon-2.png" alt="">                                  NEGOCIAÇÃO</div>
-                            <div class="textMin">...</div>
+                            <div class="textMin">À vista c/ 30%</div>
                         </div>
                         <div class="actionmin">
                             <img class="iconMinACtion iconMin" src="images/accept.png" onclick="openDetail('modal3')" alt="">
@@ -196,20 +196,15 @@
 
 <!-- DIV ONDE ENTRARÃO DINAMICAMENTE AS PERGUNTAS -->
     <div id="pagebodyConfirmacao"class="hocclear">
-            <div class="fase2Confirmacao row"   >
-                <div class="nd">
-                    <img src="images/ND.png">
-                </div>
-                <div class="boxQuestion">Obrigado por confirmar seu e-mail.
-                    <img class="emoji" src="images/EMOJI FELIZ Copy 2.png">
-                </div>
-            </div>
-
+       
             <div class="fase2Confirmacao row"   >
                     <div class="nd">
                         <img src="images/ND.png">
                     </div>
-                    <div class="boxQuestion">Seu número de celular continua sendo <strong>(11) 9999-0909</strong>?
+                    <div class="boxQuestion">
+                            Seu endereço continua sendo:<br>
+                            <strong>Av. Tununaré, 550 - 3º andar - Tamboré, Barueri - SP - CEP 06460-020</strong>?<br>
+                            OBS: É para este endereço que enviaremos os boletos para pagamento das parcelas.
                 </div>
             </div>  
 
@@ -218,28 +213,94 @@
                         <img src="images/m.png">
                     </div>
                     <div class="boxAnswer">
-                        Sim, meu número continua sendo o mesmo.
+                        NÃO, meu endereço mudou.
                     </div>
+            </div>
+
+            <div class="fase2Confirmacao row"   >
+                    <div class="nd">
+                        <img src="images/ND.png">
+                    </div>
+                    <div class="boxQuestion">
+                            Informe <strong>seu novo endereço:</strong>
                 </div>
+            </div>  
+
     </div>
 
 
     
 
-    <div id="" class="pagefooterMin"> 
-            <nav class=""> 
-              <ul id="answer_robo"class="center">
-                    <div class="wrapper row">
-                        <div class="botoes">
-                            <div class="ag">
-                                <div class="iniatendimento confirma">SIM</div>
-                                <div class="iniatendimento">NÃO, MEU NUMERO MUDOU</div>
+<div id="" class="pagefooterMax">               
+        <div class="wrapper row" style="text-align: center; border: 0.5px solid red">
+                    
+            <div class="be">
+                <div class="endereco">
+                    <div class="lines">
+                            <div class="ip">
+                                    <label class="le">CEP *</label>
+                                    <input class="insertInput min" name="" type="text" value="91770-000" placeholder="|"/>
                             </div>
-                        </div>
+                            <div class="ip">
+                                    <label class="le">Endereço *</label>
+                                    <input class="insertInput med" name="" type="text" placeholder="|"/>
+                            </div>
+                            <div class="ip">
+                                    <label class="le">Nº *</label>
+                                    <input class="insertInput min" name="" type="text" value="1550" placeholder="|"/>
+                            </div>
+                            <div class="ip">
+                                    <label class="le">Comp. *</label>
+                                    <input class="insertInput min" name="" type="text" value="332" placeholder="|"/>
+                            </div>
                     </div>
-              </ul>
-            </nav>
-      </div>
+                    <div class="lines">
+                            <div class="ip">
+                                    <select class="insertInput min" value="1" placeholder="Estado *"/>
+                                            <option value="1" selected="selected">Estado *</option>
+                                            <option value="2">RS</option>
+                                            <option value="3">SC</option>
+                                            <option value="4">SP</option>
+                                            <option value="5">RJ</option>
+                                    </select>
+                            </div>
+
+                            <div class="ip">
+                                    <select class="insertInput med" placeholder="Estado *"/>
+                                            <option value="1">Cidade *</option>
+                                            <option value="2">RS</option>
+                                            <option value="3">SC</option>
+                                            <option value="4">SP</option>
+                                            <option value="5">RJ</option>
+                                    </select>
+                            </div>
+
+                            <div class="ip">
+                                    <select class="insertInput med" placeholder="Estado *"/>
+                                            <option value="1">Bairro *</option>
+                                            <option value="2">RS</option>
+                                            <option value="3">SC</option>
+                                            <option value="4">SP</option>
+                                            <option value="5">RJ</option>
+                                    </select>
+                            </div>
+
+                            
+                    </div>
+       
+                </div>
+            </div>
+            <!-- <div class="be">
+                    <div class="endereco">
+                            <div class="iniatendimento confirma">ATUALIZAR</div>      
+                    </div>
+            </div> -->
+
+                <!-- <div class="iniatendimento confirma">ATUALIZAR</div>     -->
+                    
+        </div>
+            
+    </div>
 
 <!-- JAVASCRIPTS -->
 <script src="layout/scripts/jquery.min.js"></script>

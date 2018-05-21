@@ -21,7 +21,9 @@ function isValid() {
 
 function tryValidate() {
     if (isValid()) {
-        document.getElementById('validImg').style.display = 'inline';
+        var validImg = document.getElementById('validImg');
+        validImg.style.display = 'block'; //'inline';
+        // validImg.style.cssFloat = 'left';
         var elements = document.getElementsByClassName('date-style');
         for (var i=0; i < elements.length; i++) {
             var element = elements.item(i);
@@ -31,6 +33,11 @@ function tryValidate() {
         if (buttonElements.length > 0) {
             var button0 = buttonElements[0];
             button0.classList.add('button0-valid');
+        }
+        var codigoTituloElements = document.getElementsByClassName('codigo-titulo');
+        if (codigoTituloElements.length > 0) {
+            var codigoTitulo = codigoTituloElements[0];
+            codigoTitulo.classList.add('codigo-titulo-valido');
         }
     }
     else {
@@ -44,6 +51,11 @@ function tryValidate() {
         if (buttonElements.length > 0) {
             var button0 = buttonElements[0];
             button0.classList.remove('button0-valid');
+        }
+        var codigoTituloElements = document.getElementsByClassName('codigo-titulo');
+        if (codigoTituloElements.length > 0) {
+            var codigoTitulo = codigoTituloElements[0];
+            codigoTitulo.classList.remove('codigo-titulo-valido');
         }
     }
 }
