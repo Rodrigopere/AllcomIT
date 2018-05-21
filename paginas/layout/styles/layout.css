@@ -152,7 +152,7 @@ File: Layout CSS
 }
 
 .centralizado{
-	display: inline-block;
+	/*display: inline-block;*/
 	padding-top: 30px;
 	text-align: center;
 	color: white;
