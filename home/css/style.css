@@ -68,7 +68,7 @@ a:focus, a:hover {
 .w3lshome {
     /* background: url(images/banner3.jpg); */
     background: url('../images/imagem_casal.png') no-repeat;
-    min-height: 1080px;
+    min-height: 940px;
     background-size: cover;
     text-align: center;
 }
@@ -155,7 +155,7 @@ a.navbar-brand.w3-logo:hover {
     -moz-tex-fill-color: transparent;
     -o-text-fill-color: transparent;
     
-    padding: 16% 0 10px;
+    padding: 13% 0 10px;
 
     line-height: 0.9;
 }
@@ -582,7 +582,7 @@ img {
 
 .codigo-field-center {
     width: 60%;
-    height: 100%;
+    height: 80%;
     display: inline-block;
     float: left;
 }
@@ -614,7 +614,8 @@ img {
 
     height: 30%;
     display: block;
-    width: 100%;
+    margin-left: 11%;
+    width: 78%;
     /* border: 1px solid red; */
 }
 
@@ -648,7 +649,7 @@ img {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
-    width: 100%;
+    width: 76%;
     /* width: 25%; */
     margin-left: 2px;
     margin-right: 2px;
@@ -723,7 +724,7 @@ img {
 } */
 
 .space {
-    height: 60px;
+    height: 48px;
 }
 
 .space-footer {
@@ -825,7 +826,7 @@ img {
     border: 1px solid #FFFFFF;
     color: #fff;
     /* width: 255px; */
-    width: 100%;
+    width: 74%;
     height: 54px;
     /* padding: 15px 32px; */
     border-radius: 5px;
