@@ -178,13 +178,27 @@ File: Layout CSS
 	line-height: 15px;;
 	text-align: left;
 	font-weight: normal;
-	font-size: 7pt;
+	font-size: 9pt;
 	color: white;
 }
+.min{
+	width: 110px;
+}
+.med{
+	width: 245px;
+}
+
+
+
 
 .ip{
+	margin-left: 10px;
+	margin-right: 10px;
+	/* border: 1px solid red !important; */
+	float: left;
+	max-width: 250px;
 	position: relative;
-	width: 100%;
+	/* width: 100%; */
 	height: 30px;;
 	line-height: 30px;
 	text-align: left;
@@ -192,17 +206,27 @@ File: Layout CSS
 	font-size: 13pt;
 	color: white;
 	border-bottom: 2px solid white;
-	
-	/* border: 0.5px solid red; */
 }
+
+
+.le{
+	margin-top: -30px;
+	/* border: 1px solid blue; */
+	font-size: 8pt;
+	height: 100%;
+	z-index: 1;
+}
+
+
 
 .insertInput{
 	/* border: 1px solid blue; */
 	border: none;
 	font-weight: bold;
 	height: 100%;
-	width: 100%;
+	/* width: 100%; */
 	background-color: transparent;
+	float: left;
 }
 
 .insertInput::-webkit-input-placeholder{
@@ -231,11 +255,10 @@ File: Layout CSS
     line-height: 55px;
 }
 
-
 .iniatendimento{
 	text-align: center;
-	margin-left: 80px;
-	margin-right: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
 	font-size: 9pt;
 	color: white;
 	font-weight: bold;
@@ -260,7 +283,6 @@ textarea:-moz-placeholder { color:white; }​
 	position: fixed;
 	height: 100%;
 	width: 100%;
-	/* border: 2px solid red; */
 	background-image: linear-gradient( to right, #0066a8 50%, #0e77bc);;
 }
 
@@ -402,7 +424,6 @@ textarea:-moz-placeholder { color:white; }​
 	position: relative;
 	float: left;
 	font-size: 8pt;
-	/* border: 0.5px solid red; */
 	width: 22%;
 	text-align: left;
 }
@@ -891,7 +912,6 @@ textarea:-moz-placeholder { color:white; }​
 
 .optionQuitacao{
 	right: 0px;
-	border: 0px solid blue;
 	height: 100%;
 	width: 33.3333%;
 	float: left;
@@ -1013,6 +1033,18 @@ textarea:-moz-placeholder { color:white; }​
 	line-height: 27px;	
 	text-align: center;
 }
+
+.pagefooterMax{
+	border: 1px solid white;
+	height: 280px;
+	line-height: 210px;
+	width: 100%;
+	background-color: #3abbe8;
+	position: fixed;
+	bottom: 0px;
+}
+
+
 .pagefooterMin{
 	height: 165px;
 	line-height: 210px;
@@ -1096,6 +1128,29 @@ textarea:-moz-placeholder { color:white; }​
 	display: inline-block;
 	/* border: 2px solid blue; */
 }
+
+.endereco{
+	/* border: 1px solid green; */
+	width: 660px;
+	height: 100px;
+}
+.lines{
+	padding-top: 20px;
+	height: 80%;
+	width: 100%;
+	/* border: 0.5px solid red; */
+	position: relative;
+	
+}
+
+.be{  
+	margin-top: 100px;
+	position: relative;
+	/* border: 0.5px solid blue;	 */
+	display: inline-block;
+	text-align: center;
+}
+
 
 .botoes{
 	text-align: center;
@@ -1573,7 +1628,7 @@ table a, #comments a{background-color:inherit;}
 
 .modal-body {
   background: #FFF;
-  border-top:10px solid #23ADDC;
+  border-top:10px solid #16A4D6;
   padding: 60px 100px;
   width: 74%;
   margin-left: 13%;
@@ -1620,10 +1675,10 @@ table a, #comments a{background-color:inherit;}
 }
 
 /* Aditional Styles */
-* {
+/* * {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-}
+} */
 
 p-modal {
   line-height: 1.4em;
@@ -1673,13 +1728,36 @@ body-modal {
   transition: ease .2s;
 }
 
-button {
+
+.button1 {
   border: 1px solid #333333;
   outline: none;
   color: #333333;
+  margin-top: 60px;
+  border-radius: 5px;
+  width: 44%;
+  padding: 17px 42px;
+  font-size: 0.9em;
+  font-weight: bold;
 }
+
+.button2 {
+	outline: none;
+	color: #FFF;
+	margin-top: 60px;
+	border-radius: 5px;
+	padding: 17px 43px;
+	width: 44%;
+	font-size: 0.9em;
+	font-weight: bold;
+	background: linear-gradient(to right, #FF9600 , #FFCC40);
+  }
+
+
 
 .modal-trigger:hover {
   padding: 20px 60px;
 }
+
+
 /*MODAL-FINAL*/
