@@ -45,7 +45,7 @@ File: Layout CSS
 }
 
 .fundo{
-	position: fixed;
+	position: absolute;
 	background-color: #0668a7;
 }
 
@@ -107,8 +107,18 @@ File: Layout CSS
 }
 .textCpf{
 	text-align: center;
-	letter-spacing: 2px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #fff;
 }
+
+.textCpf2{
+	text-align: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
 .smile{
 	margin-top: -40px;
 }
@@ -132,13 +142,11 @@ File: Layout CSS
     border-left: none;
     border-right: none;
     display: inline-block;
-    height: 46px;
+    height: 40px;
     font-weight: bold;
     line-height: 9px;
-	/* font-size: 14pt; */
-	font-size: 22pt;
-	
-    width: 270px;
+	font-size: 20pt;
+    width: 238px;
     text-align: left;
     background-color: transparent;
 }
@@ -150,6 +158,23 @@ File: Layout CSS
 	color: white;
 }
 
+p-cpf {
+    line-height: 1.4em;
+    color: #fff;
+    font-size: 10px;
+}
+
+.InsiraCpf{
+	width: 88%;
+
+}
+
+.button-centralizado{
+	display: inline-block;
+	padding-top: 12px;
+	text-align: center;
+	color: white;
+}
 
 .fechar{
 	cursor: pointer;
@@ -262,7 +287,7 @@ File: Layout CSS
 	font-size: 9pt;
 	color: white;
 	font-weight: bold;
-	width: 250px;
+	width: 256px;
 	cursor: pointer;
 	border-radius: 5px;
 	border: 1px solid white;
@@ -478,6 +503,28 @@ textarea:-moz-placeholder { color:white; }​
 	/* border: 2px solid red; */
 }
 
+.infos-2{
+	border-radius: 10px;
+	vertical-align: middle;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	position: relative;
+	width: 1500px;
+	height: 80px;
+	left: 50%;
+	margin-left: -750px;
+	border: 2px solid #959699;
+}
+
+.colx-2{
+	padding: 10px;
+	position: relative;
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+
 .colx{
 	padding: 10px;
 	position: relative;
@@ -573,6 +620,19 @@ textarea:-moz-placeholder { color:white; }​
 .negociar{	
 	color: black;
 	background-color: white;
+	text-align: center;
+	line-height: 60px;
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+	font-size: 8pt;
+	font-weight: bold;
+	/* border: 1px solid black; */
+	border: 1px solid #46484d;
+}
+
+.negociar-2{	
+	color: black;
 	text-align: center;
 	line-height: 60px;
 	height: 100%;
@@ -996,6 +1056,16 @@ textarea:-moz-placeholder { color:white; }​
 	display: inline-block;
 }
 
+.name2{
+	color: #10e2e6;
+	display: inline-block;
+	font-size: 80px;
+}
+.text-titulo{
+	display: inline-block;
+	font-size: 80px;
+}
+
 
 .tituloCentraldebito{
 	line-height: 50pt;
@@ -1004,7 +1074,7 @@ textarea:-moz-placeholder { color:white; }​
 	color: white;
 	text-align: center;
 	font-weight: bold;
-	margin-top: 30px;
+	margin-top: 20px;
 	/* font-size: 40pt; */
 	font-size: 30pt;
     margin-bottom: 20px;
@@ -1621,6 +1691,15 @@ table a, #comments a{background-color:inherit;}
   animation-timing-function: ease-out;
 }
 
+.modal-box2 {
+	position: relative;
+	width: 88%;
+	margin: 100px auto;
+	animation-name: modalbox;
+	animation-duration: .3s;
+	animation-timing-function: ease-out;
+  }
+
 .modal-header {
   padding: 0px 90px;
   color: #ffffff;
@@ -1629,7 +1708,7 @@ table a, #comments a{background-color:inherit;}
 .modal-body {
   background: #FFF;
   border-top:10px solid #16A4D6;
-  padding: 60px 100px;
+  padding: 40px 100px;
   width: 74%;
   margin-left: 13%;
   border-radius: 9px;
@@ -1730,13 +1809,13 @@ body-modal {
 
 
 .button1 {
-  border: 1px solid #333333;
+  border: 2px solid #9B9C9F;
   outline: none;
   color: #333333;
   margin-top: 60px;
   border-radius: 5px;
   width: 44%;
-  padding: 17px 42px;
+  padding: 17px 36px;
   font-size: 0.9em;
   font-weight: bold;
 }
@@ -1744,9 +1823,10 @@ body-modal {
 .button2 {
 	outline: none;
 	color: #FFF;
-	margin-top: 60px;
+	float: right;
+    margin-top: -50px;
 	border-radius: 5px;
-	padding: 17px 43px;
+	padding: 17px 32px;
 	width: 44%;
 	font-size: 0.9em;
 	font-weight: bold;
