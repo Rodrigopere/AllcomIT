@@ -92,26 +92,36 @@
 							</div>
 						</div>
 						<div class="codigo-inputs">
-							<input class="date-style" id="firstField" onchange="textChanged('firstField', 0)" type="text" name="dia" size="4" maxlength="2"
-							 value="">
-							<input class="date-style" id="secondField" onchange="textChanged('secondField', 1)" type="text" name="mes" size="4" maxlength="2"
-							 value="">
-							<input class="date-style" id="thirdField" onchange="textChanged('thirdField', 2)" type="text" name="ano" size="4" maxlength="2"
-							 value="">
-							<input class="date-style" id="fourthField" onchange="textChanged('fourthField', 3)" type="text" name="ano" size="4" maxlength="2"
-							 value="">
+							<div class="date-style-container">
+								<input class="date-style" id="firstField" onchange="textChanged('firstField', 0)" type="text" name="dia" size="4" maxlength="2"
+								 value="">
+							</div>
+							<div class="date-style-container">
+								<input class="date-style" id="secondField" onchange="textChanged('secondField', 1)" type="text" name="mes" size="4" maxlength="2"
+								 value="">
+							</div>
+							<div class="date-style-container">
+								<input class="date-style" id="thirdField" onchange="textChanged('thirdField', 2)" type="text" name="ano" size="4" maxlength="2"
+								 value="">
+							</div>
+							<div class="date-style-container">
+								<input class="date-style" id="fourthField" onchange="textChanged('fourthField', 3)" type="text" name="ano" size="4" maxlength="2"
+								 value="">
+							</div>
 						</div>
 						<div class="w3-panel-space"></div>
 						<div class="w3-panel">
 							<!--style="width:30%"-->
 							<!-- <div class="w3-panel-emptyside"></div> -->
-							<button class="button0 w3-panel-content" onclick="confirmCode()">CONFIRMAR CÓDIGO</button>
+							<button class="button0 w3-panel-content" disabled="true" onclick="confirmCode()">CONFIRMAR CÓDIGO</button>
 							<!-- <div class="w3-panel-emptyside"></div> -->
 						</div>
 						<!--<a href="#" class="logo-negocie-digital"><img src="images/Logo.png" alt=" "></a>-->
-						<a href="#" class="sem-codigo">
-							Não tenho um código
-						</a>
+						<div class="sem-codigo-container">
+							<a href="#" class="sem-codigo">
+								Não tenho um código
+							</a>
+						</div>
 					</div>
 					<div class="codigo-field-right"></div>
 				</div>

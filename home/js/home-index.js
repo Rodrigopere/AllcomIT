@@ -21,9 +21,7 @@ function isValid() {
 
 function tryValidate() {
     if (isValid()) {
-        var validImg = document.getElementById('validImg');
-        validImg.style.display = 'block'; //'inline';
-        // validImg.style.cssFloat = 'left';
+        var validImg = document.getElementById('validImg').style.display = 'block';
         var elements = document.getElementsByClassName('date-style');
         for (var i=0; i < elements.length; i++) {
             var element = elements.item(i);
@@ -33,6 +31,7 @@ function tryValidate() {
         if (buttonElements.length > 0) {
             var button0 = buttonElements[0];
             button0.classList.add('button0-valid');
+            button0.disabled = false;
         }
         var codigoTituloElements = document.getElementsByClassName('codigo-titulo');
         if (codigoTituloElements.length > 0) {
@@ -51,6 +50,7 @@ function tryValidate() {
         if (buttonElements.length > 0) {
             var button0 = buttonElements[0];
             button0.classList.remove('button0-valid');
+            button0.disabled = true;
         }
         var codigoTituloElements = document.getElementsByClassName('codigo-titulo');
         if (codigoTituloElements.length > 0) {
@@ -78,4 +78,5 @@ function getInputCode() {
 function confirmCode() {
     var code = getInputCode();
     /*Executar validação do código aqui*/
+    console.log('Confirmando código: ' + code);
 }

@@ -499,7 +499,7 @@ img {
 
 .codigo-container {
     width: 100%;
-    height: 170px;
+    height: 200px;
     /* display: inline; */
     /* border: 1px solid red; */
     position: relative;
@@ -574,9 +574,23 @@ img {
     /* border: 1px solid red; */
 }
 
-.date-style {
+.date-style-container {
     display: inline-block;
     float: left;
+    width: 25%;
+    border-left: rgba(255, 255, 255, 0) 4px solid;
+}
+
+.date-style-container:first-child {
+    /* margin-left: 0; */
+    /* border-left: rgba(255, 255, 255, 1) 0px solid; */
+    border-left: 0;
+}
+
+.date-style {
+    /* display: inline-block; */
+    /* float: left; */
+    display: block;
     color: white;
     background: transparent;
     border-color: transparent;
@@ -590,13 +604,15 @@ img {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
-    width: 50px;
-    margin-left: 5px;
+    width: 100%;
+    /* width: 25%; */
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
-.date-style:first-child {
-    margin-left: 0;
-}
+/* .date-style:first-child { */
+    /* margin-left: 0; */
+/* } */
 
 
 .codigo-valido {
@@ -630,6 +646,8 @@ img {
     width: 15px;
     height: 15px;
     display: none;
+    position: absolute;
+    right: 0%;
 }
 
 
@@ -671,24 +689,38 @@ img {
 .w3-panel {
     width: 100%;
     display: block;
+    /* border: 1px solid green; */
 }
 
 .w3-panel-space {
-    height: 30px;
+    height: 10%;
+}
+
+.sem-codigo-container {
+    display: block;
+    width: 100%;
+    /* position: relative; */
+    /* border: 1px solid red; */
+    height: 15%;
 }
 
 .sem-codigo {
-    height: 0.42%;
+    /* height: 0.42%; */
+    height: 15%;
+    display: block;
     width: 100%;
-    margin-top: 4px;
+    /* margin-top: 4px; */
     color: #FFFFFF;
     font-family: "Nunito Sans";
     font-size: 12px;
     font-weight: 600;
     letter-spacing: -0.24px;
-    padding: 21px 0px 3px 0px;
-    line-height: 16px;
+    /* padding: 21px 0px 3px 0px; */
+    /* line-height: 16px; */
     text-decoration: underline;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .number {
