@@ -190,6 +190,7 @@ a.navbar-brand.w3-logo:hover {
     /* padding: 0% 0px 16em; */
     padding-left: 5%;
     width: 100%;
+    height: auto;
 }
 
 .goDownContainer {
@@ -289,7 +290,7 @@ div#about {
 
 .quemsomos {
     margin-top: 130px;
-    margin-bottom: 52px;
+    margin-bottom: 80px;
     position: relative;
     width: 100%;
 }
@@ -392,6 +393,7 @@ div#about {
 
 #quemsomos-geral {
     width: 137%;
+    height: 350px;
 }
 
 #quemsomos1 {
@@ -424,7 +426,7 @@ div#about {
     position: relative;
     padding: 1% 0% 0% 5%;
     font-size: 14px;
-    width: 36%;
+    width: 33%;
     line-height: 2em;
     height: 100px;
     float: left;
@@ -434,7 +436,17 @@ div#about {
     position: relative;
     padding: 1% 0% 0% 0%;
     font-size: 14px;
-    width: 36%;
+    width: 33%;
+    line-height: 2em;
+    height: 100px;
+    float: left;
+}
+
+#Logo-Footer {
+    position: relative;
+    padding: 1% 0% 0% 0%;
+    font-size: 14px;
+    width: 33%;
     line-height: 2em;
     height: 100px;
     float: left;
@@ -977,6 +989,10 @@ img {
 .team {
     padding: 5% 0px 180px;
     background: #f9f9f9;
+}
+
+.w3team-container {
+
 }
 
 .team h3, .w3l_team_grid, .portfolio h3, h3.title, .mail h3 {
@@ -1866,8 +1882,8 @@ div#contact {
     }
 
     .about-img img.img-responsive {
-        /* right: 0px; */
-        left: 20%;
+        right: 0px;
+        /* left: 20%; */
         position: absolute;
         overflow: hidden;
     }
@@ -1876,6 +1892,16 @@ div#contact {
 @media screen and (max-width: 1280px) {
     .blog-txt {
         padding: 30px;
+    }
+    .about-img {
+        display: none;
+    }
+    .about-txt {
+        display: block;
+        width: 100%;
+    }
+    .about-img img.img-responsive {
+        display: none;
     }
 }
 
@@ -2321,8 +2347,10 @@ div#contact {
     }
     .w3about {
         display: inline-block;
-        padding: 5% 0px 0px 0px;
+        /* padding: 5% 0px 0px 0px; */
+        padding-left: 5%;
         width: 100%;
+        height: auto;
     }
     .wthree-blog h3.center {
         text-align: center;
