@@ -2,11 +2,12 @@ body {
     padding: 0;
     margin: 0;
     background: none;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
 }
 
 body a {
-    color: #313131;
+    /* color: #313131; */
+    color: #000000;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
@@ -34,7 +35,7 @@ input[type="button"], input[type="submit"] {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     /* padding: 4.6em 0em 0em 0em; */
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     font-weight: 600;
 }
 
@@ -91,7 +92,7 @@ a.navbar-brand.w3-logo:hover {
     letter-spacing: 0.62px;
     line-height: 23px;
     text-align: center;
-    font-family: "Nunito Sans";
+    /* font-family: "Nunito Sans"; */
 }
 
 .w3ls-nav li a.scroll:hover {
@@ -137,7 +138,7 @@ a.navbar-brand.w3-logo:hover {
 
 .w3-banner-heading h1 {
     font-size: 100px;
-    font-family: Avenir Next LT Pro;
+    /* font-family: Avenir Next LT Pro; */
     /*REMOVER BRAIAM*/
     font-weight: bold;
     /*color: #0296F8;*/
@@ -161,14 +162,14 @@ a.navbar-brand.w3-logo:hover {
 }
 
 .w3-banner-heading p {
-    font-family: Avenir Next LT Pro;
+    /* font-family: Avenir Next LT Pro; */
     font-size: 100px;
     color: #fff;
     font-weight: bold;
 }
 
 .w3-banner-heading p2 {
-    font-family: Nunito sans;
+    /* font-family: Nunito sans; */
     font-size: 20px;
     font-weight: 300;
     letter-spacing: 1.11px;
@@ -188,29 +189,14 @@ a.navbar-brand.w3-logo:hover {
     display: -ms-flexbox;
     display: -webkit-flex;
     /* padding: 0% 0px 16em; */
-    padding-left: 5%;
+    padding: 0;
     width: 100%;
     height: auto;
+    overflow: hidden;
 }
 
 .goDownContainer {
-    /* display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex; */
-
-    /* bottom: 0; */
-    /* align-items: center; */
-    /* align-items: flex-end; */
-    /* justify-content: center; */
-
     display: block;
-    /* display: table-row; */
-
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* height: 100px; */
     width: 100%;
     height: 50px;
     justify-content: center;
@@ -232,14 +218,27 @@ a.navbar-brand.w3-logo:hover {
     /* margin-left: -16px; */
 }
 
+.tarja{
+    max-height: 955px;
+    width: 14px;
+    height: 100%;
+    position: relative;
+    float: left;
+    z-index: 1;
+    background-color: #e2e0d6;
+    /* margin-left: 16%;    */
+    opacity: 0.6;
+}
 .about-txt {
     /* border: 1px solid red; */
+    margin-left: 9%;
     display: inline-block;
     position: relative;
 }
 
 .about-img {
     /* border: 1px solid green; */
+    max-width: 719px;
     display: inline-block;
     position: relative;
 }
@@ -247,6 +246,7 @@ a.navbar-brand.w3-logo:hover {
 .about-txt p {
     padding-right: 10px;
     line-height: 2em;
+    margin-bottom: 60px;
 }
 
 div#about {
@@ -255,32 +255,32 @@ div#about {
 
 .divisoria {
     display: inline-block;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
     height: 76px;
     border-left: 2px solid #DADCDE;
 }
 
 .comofunciona {
-    margin-top: 194px;
+    margin-top: 14%;
     /* margin-bottom: 52px; */
     /* border: 2px solid blue; */
     position: relative;
+    margin-bottom: 5%;
     /* width: 108%; */
 }
 
 .vantagens {
     margin-top: 100px;
     margin-bottom: 52px;
-    /* border: 2px solid blue; */
     position: relative;
-    width: 108%;
+    width: 1233px;
 }
 
 .opcao-vantagens {
     position: relative;
     display: inline-block;
-    font-family: "Avenir";
+    /* font-family: "Avenir"; */
     color: #2290D8;
     font-size: 16px;
     font-weight: 300;
@@ -289,8 +289,9 @@ div#about {
 }
 
 .quemsomos {
-    margin-top: 130px;
-    margin-bottom: 80px;
+    margin-top: 10%;
+    margin-left: 12%;
+    margin-bottom: 130px;
     position: relative;
     width: 100%;
 }
@@ -305,7 +306,7 @@ div#about {
 .opcao4 {
     position: relative;
     display: inline-block;
-    font-family: "Nunito Sans";
+    /* font-family: "Nunito Sans"; */
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 0.89px;
@@ -320,7 +321,7 @@ div#about {
     height: 88px;
     width: 149px;
     color: #fff;
-    font-family: Avenir LT Std;
+    /* font-family: Avenir LT Std; */
     font-size: 40px;
 }
 
@@ -332,7 +333,7 @@ div#about {
     height: 88px;
     width: 149px;
     color: #fff;
-    font-family: Avenir LT Std;
+    /* font-family: Avenir LT Std; */
     font-size: 40px;
 }
 
@@ -354,7 +355,7 @@ div#about {
 .opcao2 {
     position: relative;
     display: inline-block;
-    font-family: "Nunito Sans";
+    /* font-family: "Nunito Sans"; */
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 0.89px;
@@ -364,8 +365,9 @@ div#about {
 .opcao {
     position: relative;
     display: inline-block;
-    font-family: "Nunito Sans";
-    font-size: 16px;
+    /* font-family: "Nunito Sans"; */
+    max-width: 432px;
+    font-size: 1em;
     font-weight: 300;
     letter-spacing: 0.89px;
     line-height: 29px;
@@ -374,7 +376,7 @@ div#about {
 .quemsomos2 {
     position: relative;
     display: inline-block;
-    font-family: "Nunito Sans";
+    /* font-family: "Nunito Sans"; */
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0.89px;
@@ -384,7 +386,7 @@ div#about {
 .quemsomos3 {
     position: relative;
     display: inline-block;
-    font-family: "Nunito Sans";
+    /* font-family: "Nunito Sans"; */
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0.89px;
@@ -392,8 +394,21 @@ div#about {
 }
 
 #quemsomos-geral {
-    width: 137%;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
     height: 350px;
+}
+
+
+.rdp{
+    position: relative;
+    font-size: 13px;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 2em;
+    display: inline-block;
+    /* border: solid 1px blue; */
 }
 
 #quemsomos1 {
@@ -402,8 +417,8 @@ div#about {
     font-size: 13px;
     width: 36%;
     line-height: 2em;
-    height: 230px;
-    float: left;
+    /* height: 230px; */
+    display: inline-block;
     border: solid 1px #4785AB;
 }
 
@@ -413,8 +428,8 @@ div#about {
     font-size: 13px;
     width: 36%;
     line-height: 2em;
-    height: 230px;
-    float: left;
+    /* height: 230px; */
+    display: inline-block;
     border: solid 1px #4785AB;
 }
 
@@ -698,7 +713,7 @@ img {
 
 .codigo-titulo {
     color: #FFFFFF;
-    font-family: "Nunito Sans";
+    /* font-family: "Nunito Sans"; */
     font-size: 12px;
     font-weight: 600;
     letter-spacing: -0.24px;
@@ -711,12 +726,12 @@ img {
 }
 
 .codigo-valido-img {
-
-    width: 15px;
-    height: 15px;
+    margin-top: -25%;
+    margin-left: -100%;
+    width: 30px;
+    height: 30px;
     display: none;
     position: absolute;
-    right: 0%;
 }
 
 
@@ -776,18 +791,13 @@ img {
 }
 
 .sem-codigo {
-    /* height: 0.42%; */
-    height: 15%;
+    height: 24%;
     display: block;
     width: 100%;
-    /* margin-top: 4px; */
-    color: #FFFFFF;
-    font-family: "Nunito Sans";
+    color: #FFFFFF !important;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: -0.24px;
-    /* padding: 21px 0px 3px 0px; */
-    /* line-height: 16px; */
     text-decoration: underline;
     position: absolute;
     bottom: 0;
@@ -822,7 +832,7 @@ img {
     letter-spacing: 0.56px;
     font-weight: 800;
     line-height: 16px;
-    font-family: "Nunito Sans";
+    /* font-family: "Nunito Sans"; */
     font-size: 12px;
     margin: 4px 2px;
     cursor: pointer;
@@ -841,10 +851,12 @@ img {
     letter-spacing: 0.56px;
     font-weight: 800;
     line-height: 16px;
-    font-family: "Nunito Sans";
+    /* font-family: "Nunito Sans"; */
     font-size: 12px;
-    margin: 4px 2px;
+    margin-left: 0;
+    margin-top: 45px;
     cursor: pointer;
+    margin-bottom: 23%;
 }
 
 .button0 {
@@ -860,7 +872,7 @@ img {
     letter-spacing: 0.56px;
     font-weight: 800;
     line-height: 16px;
-    font-family: "Nunito Sans";
+    /* font-family: "Nunito Sans"; */
     font-size: 12px;
     /* margin: 4px 2px; */
     cursor: pointer;
@@ -939,7 +951,6 @@ img {
     right: 0px;
     position: absolute;
     /* left: 10%; */
-    overflow: hidden;
     /* border-radius: 5px; 
     -webkit-box-shadow: 0px 0px 14px 0px rgba(249, 4, 4, 0.62);
     -moz-box-shadow: 0px 3px 58px 1px rgb(251, 11, 11);
@@ -955,21 +966,17 @@ img {
 }
 
 .about-txt h2 {
-    font-family: Avenir LT Std;
-    /* font-weight: bold; */
     color: #0296F8;
     font-weight: 800;
     letter-spacing: -1.36px;
     line-height: 44px;
     height: 88px;
-    width: 149px;
     color: #2290D8;
-    /* font-family: Avenir; */
     font-size: 40px;
 }
 
 .about-txt h4 {
-    font-family: Avenir LT Std;
+    /* font-family: Avenir LT Std; */
     /* font-weight: bold; */
     color: #0296F8;
     font-weight: 800;
@@ -987,7 +994,7 @@ img {
 /*-- team-inner-page --*/
 
 .team {
-    padding: 5% 0px 180px;
+    padding: 0px 0px 6%;
     background: #f9f9f9;
 }
 
@@ -1001,7 +1008,7 @@ img {
 
 .w3l_team_grid h4 {
     font-size: 18px;
-    font-family: "Nunito Sans";
+    /* font-family: "Nunito Sans"; */
     font-weight: bold;
     line-height: 27px;
     text-align: center;
@@ -1014,7 +1021,7 @@ img {
     font-size: 14px;
     color: #383A40;
     margin: 1em 0 .5em;
-    font-family: "Nunito Sans";
+    /* font-family: "Nunito Sans"; */
     line-height: 2em;
     font-weight: 600;
 }
@@ -1168,45 +1175,17 @@ img {
     font-weight: 600;
 }
 
-/*-- //team-inner-page --*/
-
-/* services */
-
-/*
 .w3-services {
-    background-color: antiquewhite;
-    padding-bottom: 5%;
-}
-.center {
-    text-align: center;
-    padding: 5% 0;
-}
-span.service-icon.fa {
-    padding: 30px;
-	flex:1;
-}
-.service1,.service2 {
-    display: flex;
-}
-.txt-align {
-text-align: right;
-    flex-basis: 46%;
-    padding: 30px 20px;
-}
-.txt-align1{
-text-align: left;
-    flex-basis: 47%;
-    padding: 30px;
-}
-span.service-icon.fa.fa-book.fa-4x, span.service-icon.fa.fa-graduation-cap.fa-4x {
-    text-align: right;
-}
-
-/* services */
-
-.w3-services {
-    padding: 0% 0px;
-    background: url('../images/bg-about.jpg') no-repeat;
+    /* border: 1px solid red;  */
+    /* margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px; */
+    min-height: 900px;
+    background: url('../images/bg-about.jpg') no-repeat center center;;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color: white;
 }
 
@@ -1815,7 +1794,7 @@ div#contact {
     font-weight: 600;
     letter-spacing: 0.07px;
     margin: 0;
-    font-family: "Nunito Sans";
+    /* font-family: "Nunito Sans"; */
 }
 
 .agileits-w3layouts p a {
@@ -1827,11 +1806,9 @@ div#contact {
     color: #fbd232;
 }
 
-/*-- //footer --*/
 
-/* Responsive */
 
-@media screen and (max-width: 1366px) {
+/* @media screen and (max-width: 1366px) {
     .blog-txt p {
         line-height: 2.3em;
     }
@@ -1847,7 +1824,6 @@ div#contact {
         letter-spacing: 0.56px;
         font-weight: 800;
         line-height: 16px;
-        font-family: "Nunito Sans";
         font-size: 12px;
         margin: 4px 2px;
         cursor: pointer;
@@ -1865,7 +1841,6 @@ div#contact {
         letter-spacing: 0.56px;
         font-weight: 800;
         line-height: 16px;
-        font-family: "Nunito Sans";
         font-size: 12px;
         margin: 4px 2px;
         cursor: pointer;
@@ -1876,20 +1851,16 @@ div#contact {
         -moz-box-flex: 1;
         -webkit-flex: 1;
         -ms-flex: 1;
-
-        /* display: inline-block */
-        /* margin-left: -16px; */
     }
 
     .about-img img.img-responsive {
         right: 0px;
-        /* left: 20%; */
         position: absolute;
         overflow: hidden;
     }
-}
+} */
 
-@media screen and (max-width: 1280px) {
+/* @media screen and (max-width: 1280px) {
     .blog-txt {
         padding: 30px;
     }
@@ -1903,9 +1874,9 @@ div#contact {
     .about-img img.img-responsive {
         display: none;
     }
-}
+} */
 
-@media screen and (max-width: 1080px) {
+/* @media screen and (max-width: 1080px) {
     .w3-banner-heading h1 {
         font-size: 100px;
     }
@@ -1928,9 +1899,9 @@ div#contact {
     .blog-txt p {
         line-height: 1.9em;
     }
-}
+} */
 
-@media screen and (max-width: 1050px) {
+/* @media screen and (max-width: 1050px) {
     .blog-txt {
         padding: 8px 25px;
     }
@@ -1940,9 +1911,9 @@ div#contact {
     .w3ls-map iframe {
         height: 320px;
     }
-}
+} */
 
-@media screen and (max-width: 991px) {
+/* @media screen and (max-width: 991px) {
     .w3ls-nav li a.scroll {
         padding: 15px 10px;
     }
@@ -1993,9 +1964,9 @@ div#contact {
     .gallery h3.center, .about-txt h2, .team h3.center, .agile-stats h3.center, .w3-services h3.center, .wthree-blog h3.center {
         font-size: 25px;
     }
-}
+} */
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
     .collapse.navbar-collapse.navHeaderCollapse {
         margin-right: -60px;
     }
@@ -2021,9 +1992,9 @@ div#contact {
     span.service-icon.fa.fa-bicycle.fa-4x, span.service-icon.fa.fa-graduation-cap.fa-4x {
         padding: 34px 25px;
     }
-}
+} */
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
         margin-left: -35px;
         font-size: 45px;
@@ -2094,9 +2065,9 @@ div#contact {
     .w3-contact li.heading {
         font-size: 20px;
     }
-}
+} */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
         margin-left: -20px;
         font-size: 40px;
@@ -2125,8 +2096,8 @@ div#contact {
     .blog-txt p {
         margin: 4px 0px;
     }
-}
-
+} */
+/* 
 @media screen and (max-width: 736px) {
     .txt-align1 p {
         width: 86%;
@@ -2226,10 +2197,6 @@ div#contact {
     }
     .comofunciona {
         margin-top: 0px;
-        /* margin-bottom: 100px; */
-
-        /* border: 2px solid blue; */
-
         position: relative;
         width: 100%;
     }
@@ -2347,7 +2314,6 @@ div#contact {
     }
     .w3about {
         display: inline-block;
-        /* padding: 5% 0px 0px 0px; */
         padding-left: 5%;
         width: 100%;
         height: auto;
@@ -2669,6 +2635,6 @@ div#contact {
     .sub-scribe input[type="email"] {
         width: 98%;
     }
-}
+} */
 
 /* //Responsive */

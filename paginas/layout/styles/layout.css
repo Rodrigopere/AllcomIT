@@ -175,7 +175,10 @@ p-cpf {
 	text-align: center;
 	color: white;
 }
-
+.w3l_team_grids{
+	width: 90%;
+	border: 2px solid blue;
+}
 .fechar{
 	cursor: pointer;
 	top: 10px;
