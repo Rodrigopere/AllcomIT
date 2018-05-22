@@ -340,6 +340,139 @@ textarea:-moz-placeholder { color:white; }​
 	display: table;
 }
 
+.tituloCondicaoPagamento{
+	color: #2d96da;
+	font-size: 10pt;
+	font-weight: bold;
+	display: table;
+}
+
+.dadosCondicaoPagamento{
+	/* border: 1px solid orange; */
+	position: absolute;
+    top: 50%;
+    left: 8%;
+    width: 90%;
+    text-align: center;
+    -hiddenkit-transform: translateY( -50% );
+    -moz-transform: translateY( -50% );
+    transform: translateY( -50% );
+}
+
+.dadosCondicaoPagamento2{
+	/* border: 1px solid orange; */
+	position: absolute;
+    top: 50%;
+    left: 14%;
+    width: 62%;
+    text-align: left;
+    -hiddenkit-transform: translateY( -50% );
+    -moz-transform: translateY( -50% );
+    transform: translateY( -50% );
+}
+
+.dadosCondicaoPagamento3{
+	/* border: 1px solid orange; */
+	position: absolute;
+    top: 36%;
+    left: 10%;
+    width: 135%;
+    text-align: left;
+    -hiddenkit-transform: translateY( -50% );
+    -moz-transform: translateY( -50% );
+    transform: translateY( -50% );
+}
+
+.listCondicaoPagamento{
+	display: table;
+	color: #383a40;
+	font-size: 8pt;
+}
+
+.listCondicaoPagamento2{
+	display: table;
+	color: #383a40;
+	font-size: 8pt;
+}
+
+.colx-3{
+	padding: 10px;
+	position: relative;
+	height: 100%;
+	width: 14%;
+	float: left;
+	background-color: white;
+}
+
+.colx-4{
+	padding: 10px;
+	position: relative;
+	height: 100%;
+	margin-top: 12px;
+	width: 10%;
+	float: left;
+	background-color: white;
+}
+
+.colx-5{
+	padding: 10px;
+	position: relative;
+	height: 100%;
+	margin-top: -10px;
+	margin-left: 2%;
+	width: 8%;
+	float: left;
+	background-color: white;
+}
+
+.colx-6{
+	padding: 10px;
+	position: relative;
+	height: 100%;
+	margin-top: -10px;
+	width: 9%;
+	margin-left: 4%;
+	float: left;
+}
+
+.colx-7{
+	padding: 10px;
+	position: relative;
+	height: 100%;
+	margin-top: -10px;
+	width: 9%;
+	margin-left: 4%;
+	float: left;
+}
+
+.fase2Confirmacao2{
+	margin-top: 20px;
+	margin-bottom: 90px;
+	display: block;
+	color: #46484d;
+}
+
+.divisoriaCondicaoPagamento1{
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	margin-top: -46px;
+	margin-bottom: 15px;
+	border-left: 1px solid #e8e8e8;
+	height: 144px;
+}
+
+.divisoriaCondicaoPagamento2{
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	margin-top: -24px;
+	margin-bottom: 15px;
+	border-left: 1px solid #e8e8e8;
+	height: 144px;
+}
+
+
 .lablemin{
 	color: #2d96da;
 	font-size: 10pt;
