@@ -8,7 +8,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<!-- stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
@@ -88,25 +88,25 @@
 							</div>
 							<div class="codigo-inputs">
 								<div class="date-style-container">
-									<input class="date-style" id="firstField" onchange="textChanged('firstField', 0)" type="text" name="dia" size="4" maxlength="2"
+									<input class="date-style" id="inputField_1" onchange="textChanged('inputField_1', 0)" type="text" name="dia" size="4" maxlength="1"
 									 value="">
 								</div>
 								<div class="date-style-container">
-									<input class="date-style" id="secondField" onchange="textChanged('secondField', 1)" type="text" name="mes" size="4" maxlength="2"
+									<input class="date-style" id="inputField_2" onchange="textChanged('inputField_2', 1)" type="text" name="mes" size="4" maxlength="1"
 									 value="">
 								</div>
 								<div class="date-style-container">
-									<input class="date-style" id="thirdField" onchange="textChanged('thirdField', 2)" type="text" name="ano" size="4" maxlength="2"
+									<input class="date-style" id="inputField_3" onchange="textChanged('inputField_3', 2)" type="text" name="ano" size="4" maxlength="1"
 									 value="">
 								</div>
 								<div class="date-style-container">
-									<input class="date-style" id="fourthField" onchange="textChanged('fourthField', 3)" type="text" name="ano" size="4" maxlength="2"
+									<input class="date-style" id="inputField_4" onchange="textChanged('inputField_4', 3)" type="text" name="ano" size="4" maxlength="1"
 									 value="">
 								</div>
 							</div>
 							<div class="w3-panel-space"></div>
 							<div class="w3-panel">
-								<button class="button0 w3-panel-content" disabled="true" onclick="confirmCode()">CONFIRMAR CÓDIGO</button>
+								<button id="confirmCodeButton" class="button0 w3-panel-content" disabled="true" onclick="confirmCode()">CONFIRMAR CÓDIGO</button>
 							</div>
 							<div class="sem-codigo-container">
 								<a href="#" class="sem-codigo">
@@ -139,9 +139,9 @@
 
 					</div>
 					<div class="opcao">
-					Por meio do <strong>Negocie Digital</strong> você pode realizar a sua
-							 negociação de débitos no seu computador ou celular,
-							quando e onde quiser.
+						Por meio do
+						<strong>Negocie Digital</strong> você pode realizar a sua negociação de débitos no seu computador ou celular, quando e onde
+						quiser.
 					</div>
 
 				</div>
@@ -178,11 +178,13 @@
 							<img src="images/icon5.png" alt=" " class="" />
 							<div class="number">5</div>Após o pagamento e a validação do banco, você receberá um novo carnê.</a>
 					</li>
-					
+
 				</ul>
-			
-				<button class="button button1">INICIAR NEGOCIAÇÃO</button>
-			
+
+				<div class="button1-container">
+					<button class="button button1">INICIAR NEGOCIAÇÃO</button>
+				</div>
+
 				<br>
 			</div>
 
@@ -196,7 +198,7 @@
 	</div>
 	<!-- //About Section -->
 	<!-- team-inner-page -->
-	
+
 	<!-- É AQUI!! ZICA DA PORRA -->
 	<div class="team" id="team">
 		<div class="container w3team-container">
@@ -277,7 +279,7 @@
 	<!-- Our Services -->
 	<div class="w3-services" id="service">
 		<div class="container w3about">
-			<div class="about-txt2" >
+			<div class="about-txt2">
 				<div class="quemsomos">
 					<div class="opcao">
 						<h2>Quem

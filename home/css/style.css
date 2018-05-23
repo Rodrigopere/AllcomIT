@@ -839,6 +839,10 @@ img {
     margin-left: 41%;
 }
 
+.button1-container {
+    display: flex;
+    justify-content: center;
+}
 .button1 {
     background: linear-gradient(to right, #0065A8, #2290D8);
     border: none;
