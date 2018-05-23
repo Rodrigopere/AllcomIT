@@ -12,6 +12,19 @@ File: Layout CSS
 @import url("custom.flexslider.css");
 @import url("framework.css");
 
+
+
+@font-face {
+	font-family: Avenir;
+	src: url('../../fonts/AvenirLTStd-Black.otf');
+}
+
+@font-face {
+	font-family: Nunito Sans;
+	src: url('../../fonts/NunitoSans-Regular.ttf');
+}
+
+
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
 .row1, .row1 a{}
@@ -32,9 +45,12 @@ File: Layout CSS
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
 #pageintro{
-	/* height: 310px; */
-	background-image: linear-gradient( to right, #0066a8 50%, #0e77bc);
+
+	height: 306px;
+	/* width: 1920px; */
+	background: radial-gradient(circle, #2290D8 0%, #0065A8 100%);
 }
+
 
 .central{
 	text-align: center !important;
@@ -943,14 +959,23 @@ textarea:-moz-placeholder { color:white; }​
 
 
 .tituloCentral{
-	position: relative;
+		height: 112px;	width: 933px;
+		color: #FFFFFF;
+		font-family: Avenir;
+		font-size: 40px;
+		font-weight: 900;
+		letter-spacing: -1.36px;
+		line-height: 56px;
+		text-align: center;
+		display: inline-block;
+	}
+	/* position: relative;
 	color: white;
 	font-size: 2.4em;
 	text-align: center;
 	line-height: 1.6em;
 	font-weight: bold;
-	padding-bottom: 20px;
-}
+	padding-bottom: 20px; */
 
 .debitos{
 	position: relative;
@@ -1216,7 +1241,7 @@ textarea:-moz-placeholder { color:white; }​
 	text-align: center;
 	margin-top: 10px;
 	padding-top: 20px;
-	/* font-family: "Nunito Sans"; */
+	font-family: "Nunito Sans";
 	font-size: 13px;
 	font-weight: 600;
 	letter-spacing: -0.26px;
@@ -1290,7 +1315,7 @@ textarea:-moz-placeholder { color:white; }​
 
 .ficamos-felizes {		
 	color: #FFFFFF;	
-	/* font-family: "Nunito Sans";	 */
+	font-family: "Nunito Sans";	
 	font-size: 20px;	
 	font-weight: 300;	
 	letter-spacing: 1.11px;	
@@ -1445,6 +1470,7 @@ textarea:-moz-placeholder { color:white; }​
 
 
 .boxQuestion{
+	font-family: "Nunito Sans";
 	max-width: 700px;
 	border-radius: 10px;
 	background-color: #f2f3f3;
@@ -1453,7 +1479,7 @@ textarea:-moz-placeholder { color:white; }​
 	width: 0 auto;
 	position: relative;
 	display: inline-block;
-	min-height: 80px;
+	height: 74px;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	/* line-height: 80px; */

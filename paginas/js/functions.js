@@ -97,9 +97,14 @@
         var neto2 = document.createElement("div");
         $(neto2).addClass('boxQuestion');
         filho.appendChild(neto2);       
+
+   
+        
         //função com efeito de máquina de escrever
         // neto2.innerHTML=firstElement.question;
         typingEffect(firstElement.question, neto2, function (callback){
+    
+
             // alert("Acabou efeito de máquina de escrever");
             if(callback){
                 efeitoCarregamento(function (callback){
@@ -160,7 +165,14 @@ function efeitoCarregamento(callback){
         var filho = document.createElement("div");
         $(filho).addClass('efeito question row');
         pai.appendChild(filho);
-        filho.innerHTML=".";
+  
+
+        // var img2 = document.createElement("img");
+        // img2.setAttribute('src', 'images/ND.png');
+        // pai.appendChild(img2);
+
+                
+        filho.innerHTML="."; 
         
         var repeticao=1;
         var cores=['rgb(34, 144, 216)', 'rgb(90, 172, 226)', 'rgb(133, 199, 235)']
@@ -175,17 +187,11 @@ function efeitoCarregamento(callback){
 
             if(repeticao>=4){
                 $(".efeito").remove();
-                // pushQuestion(); //chama próxima pergunta
-                // alert("caio");
-                // alert(robonegociacao.length);
-
                 if(robonegociacao.length<2 && robonegociacao.length>0){
-                    // alert("fim")
                     negociacao();
                 }
                 //exibe proposta
                 else if(robonegociacao.length==0){
-                    // alert("exibe negociações possíveis");
                 }
                 clearInterval(efeito); //para chamada de execução da pergunta
                 return callback(true);
